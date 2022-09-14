@@ -27,8 +27,9 @@ twitter_username: fho888
 github_username:  sunfishstanford
 
 # Build settings
-markdown: kramdown
 theme: minima
+plugins:
+  - jekyll-feed
 
 
 # Exclude from processing.
