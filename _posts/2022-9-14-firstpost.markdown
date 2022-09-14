@@ -1,12 +1,12 @@
-<!-- ---
+---
 layout: post
 title:  "Hello World"
 usemathjax: true
 categories: jekyll update
---- -->
+---
 # Introduction
 
-Hello hello
+Hello hello again
 
 $$E=mc^2$$
 
