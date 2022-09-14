@@ -1,3 +1,6 @@
+usemath: true
+
 Hello hello
 update
-$$ \pi $$
+$[a]_1 \cdot [b]_2 = [c]_T$
+<!-- $$ \pi $$ -->
