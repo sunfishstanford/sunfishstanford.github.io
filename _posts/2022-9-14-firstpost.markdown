@@ -1,7 +1,12 @@
-  usemathjax: true
+---
+layout: post
+title:  "Hello World"
+usemathjax: true
+categories: jekyll update
+---
+# Introduction
 
 Hello hello
-update markdown
 
 $$E=mc^2$$
 
