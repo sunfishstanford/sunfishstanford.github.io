@@ -1,5 +1,6 @@
 ---
 layout: post
+usemathjax: true
 ---
 new equation
 $$ x = y^2 $$
