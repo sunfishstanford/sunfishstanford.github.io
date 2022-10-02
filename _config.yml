@@ -1,8 +1,8 @@
-title: Blogins
+title: Free Energy
 author:
   name: Francis Ho
 description: > # this means to ignore newlines until "show_excerpts:"
-  Awesome description...
+  Sharing ideas and learnings in math, science, and tech
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
