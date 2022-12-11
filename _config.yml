@@ -14,8 +14,8 @@ minima:
   # generate social links in footer
   social_links:
     mastodon: 
-         - username: sunfishstanford
-          instance: hachyderm.io
+      - username: sunfishstanford
+        instance: hachyderm.io
     twitter: fho888
     github:  sunfishstanford
 
