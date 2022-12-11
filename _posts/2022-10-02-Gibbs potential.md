@@ -3,8 +3,8 @@ layout: post
 usemathjax: true
 category: physics
 ---
-new equation
-$$ x = y^2 $$
+
+Why free energy is minimized - isn't it negative for spontaneous reactions?
 
 $$ dU = T dS - p dV $$
 
