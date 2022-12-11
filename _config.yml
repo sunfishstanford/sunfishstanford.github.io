@@ -13,11 +13,11 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: fho888
+    # twitter: fho888
     github:  sunfishstanford
     mastodon: 
-      - username: sunfishstanford
-        instance: hachyderm.io
+       - username: sunfishstanford
+       - instance: hachyderm.io
 
 
 # If you want to link only specific pages in your header, uncomment
