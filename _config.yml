@@ -13,6 +13,7 @@ minima:
 
   # generate social links in footer
   social_links:
+    mastodon: sunfishstanford
     twitter: fho888
     github:  sunfishstanford
 
