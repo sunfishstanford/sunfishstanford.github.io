@@ -17,7 +17,7 @@ minima:
     github:  sunfishstanford
     mastodon:
       - username: sunfishstanford
-      - instance: hachyderm.io
+        instance: hachyderm.io
 
 
 # If you want to link only specific pages in your header, uncomment
