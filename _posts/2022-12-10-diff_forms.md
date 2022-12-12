@@ -6,9 +6,7 @@ title: "What I learned from Terry Tao's paper on differential forms and integrat
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
 
-I came across this awesome writeup from Terry Tao explaining differential forms and integration:
-
-https://www.math.ucla.edu/~tao/preprints/forms.pdf
+I came across this awesome writeup from Terry Tao explaining [differential forms and integration](https://www.math.ucla.edu/~tao/preprints/forms.pdf).
 
 With the help of this paper, I think I finally understand the basic idea of why differential forms are fundamental to integrals. I think the central idea is:
 
