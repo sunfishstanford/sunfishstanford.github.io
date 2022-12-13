@@ -6,8 +6,10 @@
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="https://hachyderm.io/@Sunfishstanford">
-            <span>You can give me feedback on Mastodon</span>
+          <a href="{{ 'feed.xml' | relative_url }}">
+            <svg class="svg-icon orange">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg><span>Subscribe</span>
           </a>
         </p>
       {%- if site.author %}
