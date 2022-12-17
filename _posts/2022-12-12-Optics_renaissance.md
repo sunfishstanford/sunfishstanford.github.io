@@ -4,7 +4,7 @@ categories: [tech, physics]
 title: "An Optics Renaissance"
 ---
 
-If you look around at the most important sectors and emerging themes in Tech, of course AI keeps coming up. But look a little closer, and you'll see that optics is also one of the most foundational technologies.  A fun (and far from exhaustive) list:
+If you look around at the most important sectors and  themes in Tech, of course AI keeps coming up. But look a little closer, and you'll see that optics is also one of the most foundational technologies.  A fun (and far from exhaustive) list:
 
 - Fiber optics: this is what powers communications across the internet, inside datacenters, etc.
 - Semiconductors: powers everything in Tech, and fabricated using the most advanced optics (extreme ultraviolet lithography) on the planet
