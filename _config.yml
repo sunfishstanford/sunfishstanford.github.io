@@ -4,6 +4,7 @@ author:
 description: > # this means to ignore newlines until "show_excerpts:"
   Sharing ideas and learnings in math, science, and tech
 
+google_analytics: G-GBR1NQ7ZLF
 show_excerpts: false # set to true to show excerpts on the homepage
 markdown: kramdown
 
