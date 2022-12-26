@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-categories: [math, physics]
+categories: ['embracing transitory confusion', math, physics]
 title: "Confusion regarding tensors and transformations"
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
@@ -49,7 +49,7 @@ But remember that \\(\partial_0\\), as a geometric vector object, doesn't change
 \partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\partial_\nu
 \\]
 
-And the components \\(V_\mu\\), defined via \\( \partial_0 = V^\mu \partial_\mu \\), must transform in a contravariant way.
+And the components \\(V^\mu\\), defined via \\( \partial_0 = V^\mu \partial_\mu \\), must transform in a contravariant way.
 
 Note that these basis vectors transform together as part of a basis set, from unprimed to primed coordinates. Writing the transformation for only \\(\partial_0\\) as done in Interpretation #1 does not make sense.
 
