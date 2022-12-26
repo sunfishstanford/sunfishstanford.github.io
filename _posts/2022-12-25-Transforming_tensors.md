@@ -49,13 +49,7 @@ But remember that \\(\partial_0\\), as a geometric vector object, doesn't change
 \partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\partial_\nu
 \\]
 
-And the components \\(V_\mu\\), defined via
-
-\\[
-\partial_0 = V^\mu \partial_\mu,
-\\]
-
-must transform in a contravariant way.
+And the components \\(V_\mu\\), defined via \\( \partial_0 = V^\mu \partial_\mu \\), must transform in a contravariant way.
 
 Note that these basis vectors transform together as part of a basis set, from unprimed to primed coordinates. Writing the transformation for only \\(\partial_0\\) as done in Interpretation #1 does not make sense.
 
@@ -75,18 +69,18 @@ To finish this off, recall that a contraction is an inner product calculated via
 Summary of learnings
 --------------------
 
-When we say that a vector transforms as a contravariant or covariant object, what we really mean is that there is a vector, a geometric object, that is invariant. And its components must transform when we change coordinate systems (reference frames) to ensure the vector stays the same.
+1. When we say that a vector transforms as a contravariant or covariant object, what we really mean is that there is a vector, a geometric object, that is invariant. And its components must transform when we change coordinate systems (reference frames) to ensure the vector stays the same.
 
-A contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative).
+2. A contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative).
 
-Basis vectors transform together as part of a basis set, when changing coordinate systems (reference frames). The point is that you'd like to know what the new basis vectors are in the new frame, so you express them in terms of the old basis vectors. So you are *not* saying that any single basis vector is *invariant* in some way.
+3. Basis vectors transform together as part of a basis set, when changing coordinate systems (reference frames). The point is that you'd like to know what the new basis vectors are in the new frame, so you express them in terms of the old basis vectors. So you are *not* saying that any single basis vector is *invariant* in some way.
 
-In \\(V = V^\mu \partial_\mu,\\) the subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis. It is *not* an index into the components of a vector.
+4. In \\(V = V^\mu \partial_\mu,\\) the subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis. It is *not* an index into the components of a vector.
 
 
-A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping.
+5. A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping.
 
-The linear combination of basis vectors weighted by components, even though it uses a similar looking Einstein summation notation, is *not* invariant.
+6. The linear combination of basis vectors weighted by components, even though it uses a similar looking Einstein summation notation, is *not* invariant.
 
 Useful Links
 ------------
