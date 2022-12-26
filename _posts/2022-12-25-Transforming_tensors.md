@@ -70,4 +70,29 @@ This means that the basis vectors for covariant 1-forms eat the basis vectors fo
 
 To finish this off, recall that a contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping, and this pairing of covariant and contravariant components automatically ensures that the contraction is invariant. The linear combination of basis vectors weighted by components, however, is *not* invariant.
 
+**Summary of learnings**
+
+When we say that a vector transforms as a contravariant or covariant object, what we really mean is that there is a vector, a geometric object, that is invariant. And its components must transform when we change coordinate systems (reference frames) to ensure the vector stays the same.
+
+A contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative).
+
+Basis vectors transform together as part of a basis set, when changing coordinate systems (reference frames). The point is that you'd like to know what the new basis vectors are in the new frame, so you express them in terms of the old basis vectors. So you are *not* saying that any single basis vector is *invariant* in some way.
+
+In 
+
+\\[V = V^\mu \partial_\mu,\\]
+
+the subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis. It is *not* an index into the components of a vector.
+
+
+A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping.
+
+The linear combination of basis vectors weighted by components, even though it uses a similar looking Einstein summation notation, is *not* invariant.
+
+**Useful Links**
+
+David Kubiznak's course on (General) Relativity at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry: <https://pirsa.org/C18021?page=1>
+
+Sean Carroll's lecture notes on General Relativity (he also wrote a book on this that is widely used, including by the Kubiznak course above): <https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf>. Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
+
 
