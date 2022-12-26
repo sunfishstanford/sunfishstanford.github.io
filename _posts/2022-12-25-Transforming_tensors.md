@@ -18,7 +18,9 @@ Under a coordinate transformation, a covariant vector has components that transf
 
 Interpretation #1: Consider an object \\(\partial_0 \equiv \frac{\partial}{\partial x^0}\\) defined at a specific point on a manifold. When transformed to the primed coordinates, 
 
-\[\partial_{0} \rightarrow \partial_{0'} = \frac{\partial x^\mu}{\partial x^{0'}}\frac{\partial}{\partial x^\mu}. \]
+\\[
+\partial_{0} \rightarrow \partial_{0'} = \frac{\partial x^\mu}{\partial x^{0'}}\frac{\partial}{\partial x^\mu}. 
+\\]
 
  So it appears that \\(\partial_0\\) transforms as a *covariant 1-form* (because the primed coordinate is in the denominator of the Jacobian partial derivative).
 
@@ -26,7 +28,7 @@ Interpretation #2: However, this object \\(\partial_0\\) is in the tangent space
 
 Interpretation #3: But there's more. The same object can be written as 
 
-\[\partial_0 = V^\mu \partial_\mu,\]
+\\[\partial_0 = V^\mu \partial_\mu,\\]
 
  where \\(V^0=1\\) and the other 3 components of \\(V^\mu\\) are zero. This is evidently an invariant scalar, because we have raised and lowered indices that are matched. So \\(\partial_0\\) also seems to be a *scalar*!
 
@@ -40,20 +42,24 @@ But remember that a geometric vector object doesn't transform–its components a
 
 \\(\partial_0\\) is in the tangent space \\(T_pM\\), which has bases \\(\partial_\mu\\). These bases transform as
 
-\[
-\partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\frac{\partial}{\partial x^\nu}
-\]
+\\[
+\partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\partial_\nu
+\\]
 
+And the components \\(V_\mu\\), defined via
 
-(Note that these basis vectors transform as a basis set, from unprimed to primed coordinates. )
-
-Therefore, the components \\(V_\mu\\), defined via
-
-\[
+\\[
 \partial_0 = V^\mu \partial_\mu,
-\]
+\\]
 
 must transform in a contravariant way.
 
+Note that these basis vectors transform as a basis set, from unprimed to primed coordinates. Writing the transformation for only \\(\partial_0\\) as done in Interpretation #1 does not make sense.
+
+And finally, Interpretation #3 is pretty funny in terms of how it is wrong. In
+
+\\[\partial_0 = V^\mu \partial_\mu,\\]
+
+The subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis set. It is *not* an index into the components of a vector. So for example, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summatio notation here is a convenient shorthand to do a linear combination of the bases weighted by the components, and it is *not* a contraction. A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the raised and lowered indices to help us with bookkeeping, and this automatically ensures that the contraction is invariant. The linear combination of bases weighted by components, however, is *not* invariant.
 
 
