@@ -10,11 +10,13 @@ I was really getting confused about tensors and covariant versus contravariant t
 
 For simplicity, let's just stick to a contravariant vector and a covariant 1-form. If we understand how that works, then we'll understand how a tensor transforms, since a tensor is just a linear combination of a bunch of tensor products of vectors and 1-forms.
 
-**Some context**
+Some context
+------------
 
 Under a coordinate transformation, a covariant vector has components that transform in the same way as the basis vectors. A contravariant vector has components that transform in the inverse way. And a scalar is a quantity that is invariant under coordinate transformation. For example, see: [https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors](https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors).
 
-**My initial confused thinking**
+My initial confused thinking
+----------------------------
 
 Interpretation #1: Consider an object \\(\partial_0 \equiv \frac{\partial}{\partial x^0}\\) defined at a specific point on a manifold. When transformed to the primed coordinates, 
 
@@ -32,7 +34,8 @@ Interpretation #3: But there's more. The same object can be written as
 
  where \\(V^0=1\\) and the other 3 components of \\(V^\mu\\) are zero. This is evidently an invariant scalar, because we have raised and lowered indices that are matched. So \\(\partial_0\\) also seems to be a *scalar*!
 
-**The correct thinking**
+The correct thinking
+--------------------
 
 It turns out I was mixing up various closely related concepts. When we say that a vector transforms as a contravariant vector, what we really mean is that there is a vector, a geometric object, that is invariant. So when we look at it from different reference frames (coordinate systems), we need to ensure that the geometric object remains the same. So in the new frame, if the basis transform in a certain way, then the components must transform the inverse way. So a contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative). The vector itself is not undergoing any changes, because it's invariant.
 
@@ -69,7 +72,8 @@ This means that the basis vectors for covariant 1-forms eat the basis vectors fo
 
 To finish this off, recall that a contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping, and this pairing of covariant and contravariant components automatically ensures that the contraction is invariant. The linear combination of basis vectors weighted by components, however, is *not* invariant.
 
-**Summary of learnings**
+Summary of learnings
+--------------------
 
 When we say that a vector transforms as a contravariant or covariant object, what we really mean is that there is a vector, a geometric object, that is invariant. And its components must transform when we change coordinate systems (reference frames) to ensure the vector stays the same.
 
@@ -84,10 +88,11 @@ A contraction is an inner product calculated via a dot product of covariant and 
 
 The linear combination of basis vectors weighted by components, even though it uses a similar looking Einstein summation notation, is *not* invariant.
 
-**Useful Links**
+Useful Links
+------------
 
-David Kubiznak's course on (General) Relativity at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry: <https://pirsa.org/C18021?page=1>
+1. David Kubiznak's course on (General) Relativity at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry: <https://pirsa.org/C18021?page=1>
 
-Sean Carroll's lecture notes on General Relativity (he also wrote a book on this that is widely used, including by the Kubiznak course above): <https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf>. Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
+2. Sean Carroll's lecture notes on General Relativity (he also wrote a book on this that is widely used, including by the Kubiznak course above): <https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf>. Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
 
 
