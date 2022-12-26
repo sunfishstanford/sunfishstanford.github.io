@@ -61,7 +61,6 @@ And finally, Interpretation #3 is pretty funny in terms of how it is wrong. In
 \\[\partial_0 = V^\mu \partial_\mu,\\]
 
 the subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis. It is *not* an index into the components of a vector. So for example, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summation notation here is a convenient shorthand to do a linear combination of the basis vectors weighted by the components, and it is *not* a contraction. We write \\(\mu\\) as a lowered index to remind ourselves that it needs to be summed in conjunction with the raised index on the component. So the fact that \\(\partial_\mu\\) has a lowered index \\(\mu\\) *does not* mean that it is a covariant 1-form. There is a nice summary from David Kubiznak's online lecture on Relativity at the Perimeter Institute (see [page 43/95 of the slides](https://pdf.pirsa.org/files/18080039.pdf)):
-
 \\[
 \mathrm{dx}^\mu(\frac{\partial}{\partial x^\nu}) = \delta^\mu_\nu.
 \\]
@@ -78,11 +77,7 @@ A contravariant vector is a vector whose *components* transform in the contravar
 
 Basis vectors transform together as part of a basis set, when changing coordinate systems (reference frames). The point is that you'd like to know what the new basis vectors are in the new frame, so you express them in terms of the old basis vectors. So you are *not* saying that any single basis vector is *invariant* in some way.
 
-In 
-
-\\[V = V^\mu \partial_\mu,\\]
-
-the subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis. It is *not* an index into the components of a vector.
+In \\(V = V^\mu \partial_\mu,\\) the subscript \\(\mu\\) in \\(\partial_\mu\\) is an index into the ordered basis. It is *not* an index into the components of a vector.
 
 
 A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping.
