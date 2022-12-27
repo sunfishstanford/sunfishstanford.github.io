@@ -13,7 +13,7 @@ For simplicity, let's just stick to a contravariant vector and a covariant 1-for
 Some context
 ------------
 
-Under a coordinate transformation, a covariant vector has components that transform in the same way as the basis vectors. A contravariant vector has components that transform in the inverse way. And a scalar is a quantity that is invariant under coordinate transformation. For example, see: [https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors](https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors).
+Under a coordinate transformation, a covariant vector has components that transform in the same way as the basis vectors. A contravariant vector has components that transform in the inverse way. And a scalar is a quantity that is invariant under coordinate transformation. For example, see: [https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors](https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors){:target="_blank"}.
 
 My initial confused thinking
 ----------------------------
@@ -56,7 +56,8 @@ And finally, Interpretation #3 is pretty funny in terms of how it is confused. I
 
 $$\partial_0 = V^\mu \partial_\mu,$$
 
-the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector. In particular, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summation notation here is a convenient shorthand to do a linear combination of the basis vectors weighted by the components, and it is *not* a contraction. We write $$\mu$$ as a lowered index to remind ourselves that it needs to be summed in conjunction with the raised index on the component. So the fact that $$\partial_\mu$$ has a lowered index $$\mu$$ *does not* mean that it is a covariant 1-form. There is a nice summary from David Kubiznak's online lecture on Relativity at the Perimeter Institute (see [page 43/95 of the slides](https://pdf.pirsa.org/files/18080039.pdf)):
+the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector. In particular, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summation notation here is a convenient shorthand to do a linear combination of the basis vectors weighted by the components, and it is *not* a contraction. We write $$\mu$$ as a lowered index to remind ourselves that it needs to be summed in conjunction with the raised index on the component. So the fact that $$\partial_\mu$$ has a lowered index $$\mu$$ *does not* mean that it is a covariant 1-form. There is a nice summary from David Kubiznak's online lecture on Relativity at the Perimeter Institute (see [page 43/95 of the slides](https://pdf.pirsa.org/files/18080039.pdf){:target="_blank"}):
+
 
 $$
 \mathrm{dx}^\mu\left(\frac{\partial}{\partial x^\nu}\right) = \delta^\mu_\nu.
@@ -85,9 +86,9 @@ Summary of learnings
 Useful Links
 ------------
 
-1. David Kubiznak's course on (General) Relativity at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry: <https://pirsa.org/C18021?page=1>
+1. David Kubiznak's [course on (General) Relativity](https://pirsa.org/C18021?page=1){:target="_blank"} at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry.
 
-2. Sean Carroll's lecture notes on General Relativity (he also wrote a book on this that is widely used, including by the Kubiznak course above): <https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf>. Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
+2. Sean Carroll's [lecture notes on General Relativity](https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf){:target="_blank"} (he also wrote a book on this that is widely used, including by the Kubiznak course above). Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
 
 3. Thanks to @ContraKinta for his [comments](https://math.stackexchange.com/questions/4604169/type-of-tensor-under-transformation-covariant-vector-vs-scalar){:target="_blank"} that corrected my mistake regarding inner product versus linear combination.
 
