@@ -17,8 +17,10 @@ Under a coordinate transformation, a covariant vector has components that transf
 
 My initial confused thinking
 ----------------------------
+updated
 
-Interpretation #1: Consider an object \\(\partial_0 \equiv \frac{\partial}{\partial x^0}\\) defined at a specific point on a manifold. When transformed to the primed coordinates, 
+
+Interpretation #1: Consider an object $$\partial_0 \equiv \frac{\partial}{\partial x^0}$$ defined at a specific point on a manifold. When transformed to the primed coordinates, 
 
 \\[
 \partial_{0} \rightarrow \partial_{0'} = \frac{\partial x^\mu}{\partial x^{0'}}\frac{\partial}{\partial x^\mu}. 
