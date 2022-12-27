@@ -31,39 +31,38 @@ Interpretation #3: But there's more. The same object can be written as
 
 $$\partial_0 = V^\mu \partial_\mu,$$
 
- where $$V^0=1$$ and the other 3 components of $$V^\mu$$ are zero. This is evidently an invariant scalar, because we have raised and lowered indices that are matched. So $$\partial_0$$ also seems to be a *scalar*!
+ where $$V^0=1$$ and the other 3 components of $$V^\mu$$ are zero. This is *evidently* an invariant scalar, because we have raised and lowered indices that are matched. So $$\partial_0$$ also seems to be a *scalar*!
 
 The correct thinking
 --------------------
 
-It turns out I was mixing up various closely related concepts. When we say that a vector transforms as a contravariant vector, what we really mean is that there is a vector, a geometric object, that is invariant. So when we look at it from different reference frames (coordinate systems), we need to ensure that the geometric object remains the same. So in the new frame, if the basis transform in a certain way, then the components must transform the inverse way. So a contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative). The vector itself is not undergoing any changes, because it's invariant.
+It turns out I was mixing up various closely related concepts. When we say that a vector transforms as a contravariant vector, what we really mean is that there is a vector, a geometric object, that is invariant; and when we describe it from the perspectives of different reference frames (coordinate systems), we need to ensure that the geometric object remains the same. So in the new frame, if the basis transform in a certain way, then the components must transform the inverse way. So a contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative). The vector itself is not undergoing any changes, because it's an invariant geometric object.
 
 So some of these interpretations above got some things right and some things wrong.  Interpretation #2 actually got the right answer, which is that $$\partial_0$$ is a contravariant vector. 
 
-But remember that $$\partial_0$$, as a geometric vector object, doesn't change under coordinate transformation–its components and basis are the ones that transform. So we need to examine its components and basis and how they transform. 
+Remember that $$\partial_0$$, as a geometric vector object, doesn't change under coordinate transformation–its components and basis are the ones that transform. So we need to examine its components and basis and how they transform. 
 
 $$\partial_0$$ is in the tangent space $$T_pM$$, which has basis $$\partial_\mu$$. These basis vectors transform as
-
 $$
 \partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\partial_\nu
 $$
-
-And the components $$V^\mu$$, defined via $$ \partial_0 = V^\mu \partial_\mu $$, must transform in a contravariant way.
+And the components $$V^\mu$$, defined via $$\partial_0 = V^\mu \partial_\mu$$, must transform in a contravariant way. Which means that $$\partial_0$$ is a contravariant vector.
 
 Note that these basis vectors transform together as part of a basis set, from unprimed to primed coordinates. Writing the transformation for only $$\partial_0$$ as done in Interpretation #1 does not make sense.
 
-And finally, Interpretation #3 is pretty funny in terms of how it is wrong. In
+And finally, Interpretation #3 is pretty funny in terms of how it is confused. In
 
 $$\partial_0 = V^\mu \partial_\mu,$$
 
-the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector. So for example, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summation notation here is a convenient shorthand to do a linear combination of the basis vectors weighted by the components, and it is *not* a contraction. We write $$\mu$$ as a lowered index to remind ourselves that it needs to be summed in conjunction with the raised index on the component. So the fact that $$\partial_\mu$$ has a lowered index $$\mu$$ *does not* mean that it is a covariant 1-form. There is a nice summary from David Kubiznak's online lecture on Relativity at the Perimeter Institute (see [page 43/95 of the slides](https://pdf.pirsa.org/files/18080039.pdf)):
+the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector. In particular, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summation notation here is a convenient shorthand to do a linear combination of the basis vectors weighted by the components, and it is *not* a contraction. We write $$\mu$$ as a lowered index to remind ourselves that it needs to be summed in conjunction with the raised index on the component. So the fact that $$\partial_\mu$$ has a lowered index $$\mu$$ *does not* mean that it is a covariant 1-form. There is a nice summary from David Kubiznak's online lecture on Relativity at the Perimeter Institute (see [page 43/95 of the slides](https://pdf.pirsa.org/files/18080039.pdf)):
+
 $$
-\mathrm{dx}^\mu(\frac{\partial}{\partial x^\nu}) = \delta^\mu_\nu.
+\mathrm{dx}^\mu\left(\frac{\partial}{\partial x^\nu}\right) = \delta^\mu_\nu.
 $$
 
-This means that the basis vectors for covariant 1-forms eat the basis vectors for contravariant vectors to return delta functions, and it's clear that $$\partial_0$$ is a contravariant vector.
+This means that the basis vectors for covariant 1-forms eat the basis vectors for contravariant vectors to return delta functions, and this makes it clear that $$\partial_0$$ is a contravariant vector.
 
-To finish this off, recall that a contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping, and this pairing of covariant and contravariant components automatically ensures that the contraction is invariant. The linear combination of basis vectors weighted by components, however, is *not* invariant.
+To finish this off, recall that a contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping, and this pairing of covariant and contravariant components automatically ensures that the contraction is invariant. A linear combination of basis vectors weighted by components, even though it features raised and lowered indices, is *not* invariant.
 
 Summary of learnings
 --------------------
