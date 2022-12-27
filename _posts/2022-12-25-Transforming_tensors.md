@@ -43,9 +43,11 @@ So some of these interpretations above got some things right and some things wro
 Remember that $$\partial_0$$, as a geometric vector object, doesn't change under coordinate transformation–its components and basis are the ones that transform. So we need to examine its components and basis and how they transform. 
 
 $$\partial_0$$ is in the tangent space $$T_pM$$, which has basis $$\partial_\mu$$. These basis vectors transform as
+
 $$
 \partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\partial_\nu
 $$
+
 And the components $$V^\mu$$, defined via $$\partial_0 = V^\mu \partial_\mu$$, must transform in a contravariant way. Which means that $$\partial_0$$ is a contravariant vector.
 
 Note that these basis vectors transform together as part of a basis set, from unprimed to primed coordinates. Writing the transformation for only $$\partial_0$$ as done in Interpretation #1 does not make sense.
@@ -76,7 +78,7 @@ Summary of learnings
 4. In $$V = V^\mu \partial_\mu,$$ the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector.
 
 
-5. A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping.
+5. A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping. It is invariant under coordinate transformation, by construction.
 
 6. The linear combination of basis vectors weighted by components, even though it uses a similar looking Einstein summation notation, is *not* invariant.
 
@@ -86,5 +88,7 @@ Useful Links
 1. David Kubiznak's course on (General) Relativity at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry: <https://pirsa.org/C18021?page=1>
 
 2. Sean Carroll's lecture notes on General Relativity (he also wrote a book on this that is widely used, including by the Kubiznak course above): <https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf>. Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
+
+3. Thanks to @ContraKinta for his comments that corrected my mistake regarding inner product versus linear combination: <https://math.stackexchange.com/questions/4604169/type-of-tensor-under-transformation-covariant-vector-vs-scalar>
 
 
