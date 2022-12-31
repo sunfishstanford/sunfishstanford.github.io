@@ -2,7 +2,7 @@
 layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', math, physics]
-title: "Making sense of metrics versus coordinate transformations"
+title: "Making sense of the metric versus the coordinate transformation"
 
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
