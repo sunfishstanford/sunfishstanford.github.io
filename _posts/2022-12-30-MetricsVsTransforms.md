@@ -32,7 +32,7 @@ $$
 g_{\alpha \rho} = g_{\rho \alpha} .
 $$
 
-Because we want to manipulate both vectors in the vector space and objects that live in the dual space (e.g., 1-forms), we use raised and lowered indices to simplify bookkeeping. And so we *define* the inverse metric $$g^{\mu \nu}$$ to let us convert from the vector space to the dual space and vice versa. For example:
+Because we want to manipulate objects in the vector space as well as  objects in the dual space (e.g., 1-forms), we use raised and lowered indices to simplify bookkeeping. And so we *define* the inverse metric $$g^{\mu \nu}$$ to let us convert from the vector space to the dual space and vice versa. For example:
 
 $$
 V^\mu = g^{\mu \nu} V_\nu .
@@ -62,7 +62,7 @@ Key takeaways
 -------------
 To summarize:
 - The metric $$g_{\mu \nu}$$ is involved in inner products and converting between vectors and 1-forms (and their tensor generalizations), always within the same coordinate system.
-- The coordinate transformation {\Lambda^{\mu'}}_\nu is involved in transforming between different reference frames or coordinate systems.
+- The coordinate transformation $${\Lambda^{\mu'}}_\nu$$ is involved in transforming between different reference frames or coordinate systems.
 
 Useful Links
 ------------
