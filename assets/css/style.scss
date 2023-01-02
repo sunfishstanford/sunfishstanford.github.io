@@ -5,3 +5,9 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
