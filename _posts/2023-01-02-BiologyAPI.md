@@ -11,7 +11,7 @@ It's interesting to view chemistry and biology through the lens of software and 
 
 At a low level, certain chemical functional groups can be viewed as a type of API because we see the same functions being leveraged by many processes. For example, a phosphate group 
 
-[Phosphate group](/assets/images/phosphate.png)
+![Phosphate group](/assets/images/phosphate.png)
 
 
 
