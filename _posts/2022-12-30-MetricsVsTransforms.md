@@ -69,3 +69,4 @@ Useful Links
 
 1. Sean Carroll's [lecture notes on General Relativity, Chapter 2](https://preposterousuniverse.com/wp-content/uploads/grnotes-two.pdf){:target="_blank"} . Eq. (2.28) on pdf page 17 shows the definition of the inverse metric.
 
+[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109606999325278742){:target="_blank"}
