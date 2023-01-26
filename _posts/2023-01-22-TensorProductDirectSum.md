@@ -33,8 +33,19 @@ The direct sum of a bunch of vector spaces is also the same thing as the Cartesi
 
 Tensor product
 --------
-For a tensor product space $$P = A \otimes B$$, the basis $$B_P$$ is the *Cartesian product* of the original bases. Therefore, $$B_P = B_A \times B_B = \{ (a_1,b_1), (a_1,b_2), (a_1,b_3), (a_2,b_1), (a_2,b_2),(a_2,b_3),(a_3,b_1),(a_3,b_2,),(a_3,b_3) \}$$. Thus, the tensor product space $$P$$ is comprised of linear combinations of these basis vectors. So we see that the dimensions of the original vector spaces $$A$$ and $$B$$ are *multiplied* together to yield the dimension $$d_P=d_A \times d_B$$ of the tensor product space.
+For a tensor product space $$P = A \otimes B$$, the basis $$B_P$$ is the *Cartesian product* of the original bases. Therefore, 
+
+$$\begin{aligned}
+B_P &= B_A \times B_B \\
+&= \{ (a_1,b_1), (a_1,b_2), (a_1,b_3), (a_2,b_1), (a_2,b_2),(a_2,b_3),(a_3,b_1),(a_3,b_2,),(a_3,b_3) \}.
+\end{aligned}
+$$ 
+
+Thus, the tensor product space $$P$$ is comprised of linear combinations of these basis vectors. So we see that the dimensions of the original vector spaces $$A$$ and $$B$$ are *multiplied* together to yield the dimension $$d_P=d_A \times d_B$$ of the tensor product space.
 
 So this is why when we have one qubit, we have a 2-dimensional Hilbert space, but when we have $$n$$ qubits, we have a $$2^n$$ dimensional Hilbert space. As the saying goes, Hilbert space is a big place!
 
+---
+
+[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109754247164648030){:target="_blank"}
 
