@@ -2,94 +2,39 @@
 layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', math, physics]
-title: "Confusion regarding tensors and transformations"
+title: "Direct sum versus tensor product of vector spaces"
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
 
-I was really getting confused about tensors and covariant versus contravariant transformations, but I think I understand it now, so I'd like to share this in case it's helpful for others.
+I regularly get confused about direct sums versus tensor products if it's been a while since I last thought about the topic, and then I would need to re-remember how things work. So I decided to jot down these notes to save some time in the future. (Note: we are only considering direct sums and tensor products of finite numbers of spaces.)
 
-For simplicity, let's just stick to a contravariant vector and a covariant 1-form. If we understand how that works, then we'll understand how a tensor transforms, since a tensor is just a linear combination of a bunch of tensor products of vectors and 1-forms.
-
-Some context
-------------
-
-Under a coordinate transformation, a covariant vector has components that transform in the same way as the basis vectors. A contravariant vector has components that transform in the inverse way. And a scalar is a quantity that is invariant under coordinate transformation. For example, see: [https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors](https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors){:target="_blank"}.
-
-My initial confused thinking
-----------------------------
-Interpretation #1: Consider an object $$\partial_0 \equiv \frac{\partial}{\partial x^0}$$ defined at a specific point on a manifold. When transformed to the primed coordinates, 
-
-$$
-\partial_{0} \rightarrow \partial_{0'} = \frac{\partial x^\mu}{\partial x^{0'}}\frac{\partial}{\partial x^\mu}. 
-$$
-
- So it appears that $$\partial_0$$ transforms as a *covariant 1-form* (because the primed coordinate is in the denominator of the Jacobian partial derivative).
-
-Interpretation #2: However, this object $$\partial_0$$ is in the tangent space $$T_pM$$, which is known to be a vector space of contravariant vectors (namely, velocity vectors). Therefore, $$\partial_0$$ also seems to be a *contravariant vector*!
-
-Interpretation #3: But there's more. The same object can be written as 
-
-$$\partial_0 = V^\mu \partial_\mu,$$
-
- where $$V^0=1$$ and the other 3 components of $$V^\mu$$ are zero. This is *evidently* an invariant scalar, because we have raised and lowered indices that are matched. So $$\partial_0$$ also seems to be a *scalar*!
-
-The correct thinking
---------------------
-
-It turns out I was mixing up various closely related concepts. When we say that a vector transforms as a contravariant vector, what we really mean is that there is a vector, a geometric object, that is invariant; and when we describe it from the perspectives of different reference frames (coordinate systems), we need to ensure that the geometric object remains the same. So in the new frame, if the basis transform in a certain way, then the components must transform the inverse way. So a contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative). The vector itself is not undergoing any changes, because it's an invariant geometric object.
-
-So some of these interpretations above got some things right and some things wrong.  Interpretation #2 actually got the right answer, which is that $$\partial_0$$ is a contravariant vector. 
-
-Remember that $$\partial_0$$, as a geometric vector object, doesn't change under coordinate transformation–its components and basis are the ones that transform. So we need to examine its components and basis and how they transform. 
-
-$$\partial_0$$ is in the tangent space $$T_pM$$, which has basis $$\partial_\mu$$. These basis vectors transform as
-
-$$
-\partial_{\mu} \rightarrow \partial_{\mu'} = \frac{\partial x^\nu}{\partial x^{\mu'}}\partial_\nu
-$$
-
-And the components $$V^\mu$$, defined via $$\partial_0 = V^\mu \partial_\mu$$, must transform in a contravariant way. Which means that $$\partial_0$$ is a contravariant vector.
-
-Note that these basis vectors transform together as part of a basis set, from unprimed to primed coordinates. Writing the transformation for only $$\partial_0$$ as done in Interpretation #1 does not make sense.
-
-And finally, Interpretation #3 is pretty funny in terms of how it is confused. In
-
-$$\partial_0 = V^\mu \partial_\mu,$$
-
-the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector. In particular, this index is used to return a specific vector, whereas an index for a component is used to return a specific real number. And so the Einstein summation notation here is a convenient shorthand to do a linear combination of the basis vectors weighted by the components, and it is *not* a contraction. We write $$\mu$$ as a lowered index to remind ourselves that it needs to be summed in conjunction with the raised index on the component. So the fact that $$\partial_\mu$$ has a lowered index $$\mu$$ *does not* mean that it is a covariant 1-form. There is a nice summary from David Kubiznak's online lecture on Relativity at the Perimeter Institute (see [page 43/95 of the slides](https://pdf.pirsa.org/files/18080039.pdf){:target="_blank"}):
+Cut to the chase
+------
+The direct sum $$A \oplus B$$ is the Cartesian product of the vector spaces $$A$$ and $$B$$. 
 
 
-$$
-\mathrm{dx}^\mu\left(\frac{\partial}{\partial x^\nu}\right) = \delta^\mu_\nu.
-$$
-
-This means that the basis vectors for covariant 1-forms eat the basis vectors for contravariant vectors to return delta functions, and this makes it clear that $$\partial_0$$ is a contravariant vector.
-
-To finish this off, recall that a contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping, and this pairing of covariant and contravariant components automatically ensures that the contraction is invariant. A linear combination of basis vectors weighted by components, even though it features raised and lowered indices, is *not* invariant.
-
-Summary of learnings
---------------------
-
-1. When we say that a vector transforms as a contravariant or covariant object, what we really mean is that there is a vector, a geometric object, that is invariant. And its components must transform when we change coordinate systems (reference frames) to ensure the vector stays the same.
-
-2. A contravariant vector is a vector whose *components* transform in the contravariant way (with the primed coordinate in the numerator of the Jacobian partial derivative).
-
-3. Basis vectors transform together as part of a basis set, when changing coordinate systems (reference frames). The point is that you'd like to know what the new basis vectors are in the new frame, so you express them in terms of the old basis vectors. So you are *not* saying that any single basis vector is *invariant* in some way.
-
-4. In $$V = V^\mu \partial_\mu,$$ the subscript $$\mu$$ in $$\partial_\mu$$ is an index into the ordered basis. It is *not* an index into the components of a vector.
+The tensor product $$A \otimes B$$ is the vector space that is spanned by a basis that is the Cartesian product of bases $$B_A$$ and $$B_B$$. Here, $$B_A$$ and $$B_B$$ are the bases for $$A$$ and $$B$$, respectively.
 
 
-5. A contraction is an inner product calculated via a dot product of covariant and contravariant components, with the indices raised and lowered to help us with bookkeeping. It is invariant under coordinate transformation, by construction.
 
-6. The linear combination of basis vectors weighted by components, even though it uses a similar looking Einstein summation notation, is *not* invariant.
+Direct sum
+------
+Suppose we have two spaces $$A$$ (dimension $$d_A$$ and basis $$B_A$$) and $$B$$ (dim $$d_B$$ and basis $$B_B$$), and we form a direct sum space $$S=A \oplus B$$ (dimension $$d_S$$ and basis $$B_S$$) and a tensor product space $$P = A \otimes B$$ (dimension $$d_P$$ and basis $$B_P$$).
 
-Useful Links
-------------
+E.g., let $$A$$ and $$B$$ both be 3-dimensional vector spaces ($$d_A = d_B = 3$$), with $$B_A = \{a_1,a_2,a_3\}$$ and $$B_B = \{b_1,b_2,b_3\}$$.
 
-1. David Kubiznak's [course on (General) Relativity](https://pirsa.org/C18021?page=1){:target="_blank"} at the Perimeter Institute, 2018/2019. Starting in Lecture 4, he covers manifolds and a physicist's intro to differential geometry.
+Then the direct sum space $$S=A \oplus B$$ has basis $$B_S = B_A \cup B_B$$, i.e., $$B_S =  \{a_1, a_2, a_3, b_1, b_2, b_3 \}$$. So the dimension of $$S$$ is $$d_S = d_A + d_B = 6$$, and each element of $$S$$ is described by 6 components. In other words, the dimensions of $$A$$ and $$B$$ are added together when performing a direct sum.
 
-2. Sean Carroll's [lecture notes on General Relativity](https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf){:target="_blank"} (he also wrote a book on this that is widely used, including by the Kubiznak course above). Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
+What if we recursively form a second level of direct sums? For example, let $$C$$ and $$D$$ be two 2-dimensional spaces with bases $$\{c_1,c_2\}$$ and $$\{d_1,d_2\}$$, respectively, and let $$T=C \oplus D$$. Now let $$R=S \oplus T = (A \oplus B) \oplus (C \oplus D) $$. Then the basis for $$R$$ is $$B_R = \{ a_1,a_2,a_3,b_1,b_2,b_3,c_1,c_2,d_1,d_2 \}$$.
 
-3. Thanks to @ContraKinta for his [comments](https://math.stackexchange.com/questions/4604169/type-of-tensor-under-transformation-covariant-vector-vs-scalar){:target="_blank"} that corrected my mistake regarding inner product versus linear combination.
+So, we see that for direct sums of a bunch of vector spaces, we just take the basis vectors of each vector space, throw them all together into a bucket, and then the direct sum space is  comprised of linear combinations of all the basis vectors in this bucket.
+
+The direct sum of a bunch of vector spaces is also the same thing as the Cartesian product of the vector spaces. To see this, recall that a Cartesian product of two sets is constructed via an ordered pair where the first member of the ordered pair is chosen from the first set and the second member is chosen from the second set, and we iterate over all possible choices. Therefore, a nested series of Cartesian products is a nested series of ordered pairs. But such a nested series of various items is, for the current purpose, equivalent to a simple flat list of all of the items. And each item in the list is a possible choice from one of the vector space. And each choice from a vector space is actually a list of choices of possible multiples of the basis vectors for that space. So the end result is formally a linear combination of all of the basis vector from all of the vector spaces, which is the same thing as a direct sum.
+
+Tensor product
+--------
+For a tensor product space $$P = A \otimes B$$, the basis $$B_P$$ is the *Cartesian product* of the original bases. Therefore, $$B_P = B_A \times B_B = \{ (a_1,b_1), (a_1,b_2), (a_1,b_3), (a_2,b_1), (a_2,b_2),(a_2,b_3),(a_3,b_1),(a_3,b_2,),(a_3,b_3) \}$$. Thus, the tensor product space $$P$$ is comprised of linear combinations of these basis vectors. So we see that the dimensions of the original vector spaces $$A$$ and $$B$$ are *multiplied* together to yield the dimension $$d_P=d_A \times d_B$$ of the tensor product space.
+
+So this is why when we have one qubit, we have a 2-dimensional Hilbert space, but when we have $$n$$ qubits, we have a $$2^n$$ dimensional Hilbert space. As the saying goes, Hilbert space is a big place!
 
 
