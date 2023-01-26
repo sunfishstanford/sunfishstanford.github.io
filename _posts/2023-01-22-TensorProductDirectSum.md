@@ -1,49 +1,40 @@
 ---
 layout: post
 usemathjax: true
-categories: [math, physics]
-title: "Tensor product space vs direct sum space"
-
+categories: ['embracing transitory confusion', math, physics]
+title: "Direct sum versus tensor product of vector spaces"
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
 
-Cartesian space
-3 dim, 3 indep basis vectors
-Take each vector, as part of its own spanned space
-Construct a new space where you take formal sum of linear combinations of the vectors
-This is a direct sum space
-So the dimensions are added together 
+I regularly get confused about direct sums versus tensor products if it's been a while since I last thought about the topic, and then I would need to re-remember how things work. So I decided to jot down these notes to save some time in the future. (Note: we are only considering direct sums and tensor products of finite numbers of spaces.)
 
-Now take two qubits. Each has a 2 dim state space, each state space spanned by 2 basis vector (eg, up and down). So there are a total of 4 basis vectors. To construct a state space that includes both qubits, you cannot make a linear combination of the 4 basis vectors, because they live in different spaces and cannot be added. 
+Cut to the chase
+------
+The direct sum $$A \oplus B$$ is the Cartesian product of the vector spaces $$A$$ and $$B$$. 
 
-but what does it mean to do a formal linear combination?
 
-It means that you take the list of coefficients from the two spaces and treat them as two column vectors, and then you concatenate the two column vector to form a new column vector that has dimension equal to the sums of the two original dimensions.
-
-what does it mean to do a direct product of the two spaces?
-it means that for every v \in V and w \in W, you get an element of V X W by specifying both v and w.
+The tensor product $$A \otimes B$$ is the vector space that is spanned by a basis that is the Cartesian product of bases $$B_A$$ and $$B_B$$. Here, $$B_A$$ and $$B_B$$ are the bases for $$A$$ and $$B$$, respectively.
 
 
 
+Direct sum
+------
+Suppose we have two spaces $$A$$ (dimension $$d_A$$ and basis $$B_A$$) and $$B$$ (dim $$d_B$$ and basis $$B_B$$), and we form a direct sum space $$S=A \oplus B$$ (dimension $$d_S$$ and basis $$B_S$$) and a tensor product space $$P = A \otimes B$$ (dimension $$d_P$$ and basis $$B_P$$).
+
+E.g., let $$A$$ and $$B$$ both be 3-dimensional vector spaces ($$d_A = d_B = 3$$), with $$B_A = \{a_1,a_2,a_3\}$$ and $$B_B = \{b_1,b_2,b_3\}$$.
+
+Then the direct sum space $$S=A \oplus B$$ has basis $$B_S = B_A \cup B_B$$, i.e., $$B_S =  \{a_1, a_2, a_3, b_1, b_2, b_3 \}$$. So the dimension of $$S$$ is $$d_S = d_A + d_B = 6$$, and each element of $$S$$ is described by 6 components. In other words, the dimensions of $$A$$ and $$B$$ are added together when performing a direct sum.
+
+What if we recursively form a second level of direct sums? For example, let $$C$$ and $$D$$ be two 2-dimensional spaces with bases $$\{c_1,c_2\}$$ and $$\{d_1,d_2\}$$, respectively, and let $$T=C \oplus D$$. Now let $$R=S \oplus T = (A \oplus B) \oplus (C \oplus D) $$. Then the basis for $$R$$ is $$B_R = \{ a_1,a_2,a_3,b_1,b_2,b_3,c_1,c_2,d_1,d_2 \}$$.
+
+So, we see that for direct sums of a bunch of vector spaces, we just take the basis vectors of each vector space, throw them all together into a bucket, and then the direct sum space is  comprised of linear combinations of all the basis vectors in this bucket.
+
+The direct sum of a bunch of vector spaces is also the same thing as the Cartesian product of the vector spaces. To see this, recall that a Cartesian product of two sets is constructed via an ordered pair where the first member of the ordered pair is chosen from the first set and the second member is chosen from the second set, and we iterate over all possible choices. Therefore, a nested series of Cartesian products is a nested series of ordered pairs. But such a nested series of various items is, for the current purpose, equivalent to a simple flat list of all of the items. And each item in the list is a possible choice from one of the vector space. And each choice from a vector space is actually a list of choices of possible multiples of the basis vectors for that space. So the end result is formally a linear combination of all of the basis vector from all of the vector spaces, which is the same thing as a direct sum.
+
+Tensor product
+--------
+For a tensor product space $$P = A \otimes B$$, the basis $$B_P$$ is the *Cartesian product* of the original bases. Therefore, $$B_P = B_A \times B_B = \{ (a_1,b_1), (a_1,b_2), (a_1,b_3), (a_2,b_1), (a_2,b_2),(a_2,b_3),(a_3,b_1),(a_3,b_2,),(a_3,b_3) \}$$. Thus, the tensor product space $$P$$ is comprised of linear combinations of these basis vectors. So we see that the dimensions of the original vector spaces $$A$$ and $$B$$ are *multiplied* together to yield the dimension $$d_P=d_A \times d_B$$ of the tensor product space.
+
+So this is why when we have one qubit, we have a 2-dimensional Hilbert space, but when we have $$n$$ qubits, we have a $$2^n$$ dimensional Hilbert space. As the saying goes, Hilbert space is a big place!
 
 
-It's interesting to view chemistry and biology through the lens of software and APIs. [Wikipedia defines an application programming interface](https://en.wikipedia.org/wiki/API){:target="_blank"} as a way for software programs to communicate with each other via well defined rules (protocols), so that a service provider, whose API is being called, can provide a service while hiding the details of the implementation so that the service consumers don't need to worry about those details. This enhances modularity and composability of a software system.
-
-Similar principles apply to chemistry and biology! Certain chemical functional groups can be viewed as a type of API because we see the same functions being leveraged by many processes in a modular, composable way. A great example is a phosphate group, a phosphorus atom bonded to four oxygen atoms:
-
-![Phosphate group](/assets/images/phosphate.png){: width="100" .center-image }
-
-In molecules such as ATP that contains phosphate groups, the linkage between two phosphorus atoms and the connecting oxygen atom is kinetically stable (e.g., the ATP molecule is stable in the cell), but thermodynamically unstable (it is energetically favorable to break the bond to replace with a more thermodynamically stable configuration and thus release energy, e.g, hydrolysis of ATP). Also, a phosphate group tends to be negatively charged. 
-
-Together, these factors enable a large variety of biochemical "use cases" where energy needs to be controllably stored or released (ATP as the "energy currency of cells"), or charge needs to be controllably added or removed (kinase/phosphatase to add or remove charge to proteins and thereby switch on/off their functions). And phosphate groups are a sort of "modular molecular API" that is used by these biochemical processes.
-
-Here is a great discussion of [the importance of phosphates to life as we know it](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Book%3A_Organic_Chemistry_with_a_Biological_Emphasis_v2.0_(Soderberg)/09%3A_Phosphate_Transfer_Reactions/9.01%3A_Prelude_to_Phosphate_Transfer_Reactions){:target="_blank"}. Hint: be sure to read until the end of the page.
-
-Useful Links
-------------
-
-1. Tim Soderberg's online text, *Organic Chemistry with a Biological Emphasis*: [Chapter on Phosphate Transfer Reactions](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Book%3A_Organic_Chemistry_with_a_Biological_Emphasis_v2.0_(Soderberg)/09%3A_Phosphate_Transfer_Reactions){:target="_blank"}
-
----
-
-[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109624369727398121){:target="_blank"}
