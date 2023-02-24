@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-categories: [tech, physics, biology, chemistry]
+categories: [math, physics]
 title: "A Different Golden Age of Science"
 
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
