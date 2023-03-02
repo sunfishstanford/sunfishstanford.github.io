@@ -8,7 +8,7 @@ title: "Carnot heat engines and reversibility"
 ---
 
 
-![Phosphate group](/assets/images/phosphate.png){: width="100" .center-image }
+![Reversible engines](/assets/images/Carnot.png){: width="200" .center-image }
 
 
 When you learn thermodynamics, one of the first new concepts encountered is that there are state variables (e.g., energy) that are properties uniquely determined by the state and not dependent on the prior history (all this is assuming equilibrium states), versus properties that depend on prior history and therefore are NOT state variables (e.g., work or heat). And then we learn about *perfect* differentials (corresponding to state variables) versus *imperfect* differentials (corresponding to properties that are *not* state variables).
