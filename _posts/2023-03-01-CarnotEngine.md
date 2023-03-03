@@ -25,7 +25,7 @@ The good news is that it's actually very simple to understand *why this must be 
 
 Consider a generic reversible heat engine. It has two heat flows that connect to two thermal reservoirs and one work output (which could be negative, if work is performed on the heat engine by an external source). Conservation of energy requires that  the sum of these three must be zero (just need to consistently pick the positive directions for the three quantities). Now, consider two different reversible heat engines $$A$$ and $$B$$ connected in parallel, so that both heat engines have heat flows connected to the two thermal reservoirs. This will look similar to the diagram above.
 
-Now, assume that the two engines are running in opposite direction. For example, let's say that $$A$$ is drawing heat from $$T_1$$, expelling heat into $$T_2$$, and producing positive work output; and let's say that $$BB$$ is doing the reverse. Now consider this combination of the two heat engines as a black box that has:
+Now, assume that the two engines are running in opposite direction. For example, let's say that $$A$$ is drawing heat from $$T_1$$, expelling heat into $$T_2$$, and producing positive work output; and let's say that $$B$$ is doing the reverse. Now consider this combination of the two heat engines as a black box that has:
 - A total heat flow connected to $$T_1$$
 - A total heat flow connected to $$T_2$$
 - A total work output going to the external world
