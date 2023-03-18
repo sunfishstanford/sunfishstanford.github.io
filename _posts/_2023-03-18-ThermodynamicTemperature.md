@@ -7,9 +7,6 @@ title: "Simple explanation of the thermodynamic temperature scale"
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
 
-
-![Reversible engines](/assets/images/Carnot.png){: width="600" .center-image }
-
 How to get thermodynamic temperature scale
 
 Basic properties a temp scale should satisfy:
