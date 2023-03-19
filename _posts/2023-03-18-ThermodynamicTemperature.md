@@ -63,6 +63,8 @@ Therefore, if Alice measures the unknown temperature using a reference reservoir
 
 Finally, we won't discuss it here, but the thermodynamic temperature scale can be shown to be the same as the temperature measured by an ideal-gas thermometer. 
 
+Key Insights
+-------------
 Let’s take a step back and think about what we just went through.
 
 - The Second Law of Thermodynamics led us to conclude that all Carnot engines operating between a given pair of temperatures must have the same efficiency
