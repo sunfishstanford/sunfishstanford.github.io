@@ -25,10 +25,12 @@ Then, the definition of the thermodynamic temperature is very simple: we define 
 
 Using the thermodynamic temperature scale, the efficiency of a Carnot engine operating between a higher temperature $$T_1$$ and a lower temperature $$T_2$$ is
 
-\begin{equation}
+$$
+\begin{aligned}
 \eta(T_1,T_2) &= \frac{\vert Q_1 \vert - \vert Q_2 \vert}{\vert Q_1 \vert}\\
 &= 1-\frac{T_2}{T_1}
-\end{equation}
+\end{aligned}
+$$
 
 We would like this measurement technique to yield consistent temperature values, irrespective of how we choose to designate the reference reservoir. This means that for a specific set of unknown reservoirs, if two experimenters each independently picks a reference reservoir and uses this technique to measure the temperatures of all the unknown reservoirs, they should obtain two sets of temperature values that are consistent up to a scaling factor, where the scaling factor is the ratio of the two reference reservoir temperatures.
 
