@@ -24,10 +24,11 @@ Here's what we do: start with a reservoir at some specific reference temperature
 Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$\lvert Q_{new}/Q_R \rvert$$.
 
 Using the thermodynamic temperature scale, the efficiency of a Carnot engine operating between a higher temperature $$T_1$$ and a lower temperature $$T_2$$ is
-$$
-\eta(T_1,T_2) &= \fract{\vert Q_1 \vert - \vert Q_2 \vert}{\vert Q_1 \vert}\\
+
+\begin{equation}
+\eta(T_1,T_2) &= \frac{\vert Q_1 \vert - \vert Q_2 \vert}{\vert Q_1 \vert}\\
 &= 1-\frac{T_2}{T_1}
-$$
+\end{equation}
 
 We would like this measurement technique to yield consistent temperature values, irrespective of how we choose to designate the reference reservoir. This means that for a specific set of unknown reservoirs, if two experimenters each independently picks a reference reservoir and uses this technique to measure the temperatures of all the unknown reservoirs, they should obtain two sets of temperature values that are consistent up to a scaling factor, where the scaling factor is the ratio of the two reference reservoir temperatures.
 
