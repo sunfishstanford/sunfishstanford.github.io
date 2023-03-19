@@ -70,7 +70,7 @@ Let’s take a step back and think about what we just went through.
 - Therefore, we can take any set of reservoirs at different temperatures and associate with them a set of heat flows that result when we attach various Carnot engines to those reservoirs. The absolute value of the ratio of heat flows for any pair of reservoirs is unique, independent of what combination of Carnot engines we choose to hook up.
 - This allows us to define a thermodynamic temperature scale that is simply proportional to the ratio of heat flows
 - Furthermore, any Carnot engine operating between two temperatures can be considered to be a combination of two Carnot engine in series, where the two Carnot engines share a third temperature/reservoir
-- Therefore, any experimenter can arbitrarily choose a reference reservoir with its temperature defined to be one degree, and the resultant temperature measurements will be consistent with any other experimenter's choice of reference reservoir, up to a scaling constant
+- Therefore, any experimenter can arbitrarily choose a reference reservoir with its temperature defined to be one degree, and the resultant temperature measurements will be consistent with any other experimenter's choice of reference reservoir, up to a scaling constant.
 
 ---
 
