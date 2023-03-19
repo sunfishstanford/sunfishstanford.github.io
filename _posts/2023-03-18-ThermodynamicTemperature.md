@@ -9,7 +9,7 @@ title: "The beauty of the thermodynamic temperature scale"
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimeters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
-The efficiency of a Carnot heat engine is a universal property that directly follows from the laws of thermodynamics, and the beautiful reasoning behind it was a key triumph of physics in the 19th century. As [Feynman put it, at the beginning of his Section 44-4](https://www.feynmanlectures.caltech.edu/I_44.html){:target="_blank"}:
+The efficiency of a Carnot heat engine is a universal property that directly follows from the laws of thermodynamics, and the beautiful reasoning behind it was a key triumph of physics in the 19th century. As [Feynman wrote, at the beginning of his Section 44-4](https://www.feynmanlectures.caltech.edu/I_44.html){:target="_blank"}:
 
 >The efficiency of an ideal engine...to find this universal law...is one of the very beautiful pieces of reasoning in physics
 
@@ -21,7 +21,7 @@ The main idea behind the solution is to define a new, fundamental type of temper
 
 Here's what we do: we start with a reservoir at some specific reference temperature $$T_R$$ that we pick for convenience (and of course we would need to standardize this so that different organizations can agree on the temperature scale), and we define this reference temperature to be "one degree" in our thermodynamic temperature scale. We then take a new reservoir at a different temperature $$T_{new}$$ and consider a Carnot engine between those two temperatures. Let the heat flows be $$Q_{new}$$ from the new temperature $$T_{new}$$ and $$Q_R$$ from the reference temperature $$T_R=1$$. 
 
-Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \left|Q_{new}/Q_R\right| T_R$$, which is simply $$|Q_{new}/Q_R|$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the reservoir and the reference reservoir at the temperature defined to be $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$|Q_{new}/Q_R|$$.
+Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \vert Q_{new}/Q_R \vert T_R$$, which is simply $$|Q_{new}/Q_R|$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the reservoir and the reference reservoir at the temperature defined to be $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$|Q_{new}/Q_R|$$.
 
 We would like this measurement technique to yield consistent values for temperature, no matter how we happened to pick the reference reservoir. So to think about this, let's take any three reservoirs at temperatures $$T_1$$, $$T_2$$, and $$T_3$$, where $$T_1$$ is the highest and $$T_3$$ is the lowest. Consider these two cases:
 
