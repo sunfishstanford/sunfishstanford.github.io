@@ -23,6 +23,12 @@ Here's what we do: start with a reservoir at some specific reference temperature
 
 Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$\lvert Q_{new}/Q_R \rvert$$.
 
+Using the thermodynamic temperature scale, the efficiency of a Carnot engine operating between a higher temperature $$T_1$$ and a lower temperature $$T_2$$ is
+$$
+\eta(T_1,T_2) &= \fract{\vert Q_1 \vert - \vert Q_2 \vert}{\vert Q_1 \vert}\\
+&= 1-\frac{T_2}{T_1}
+$$
+
 We would like this measurement technique to yield consistent temperature values, irrespective of how we choose to designate the reference reservoir. This means that for a specific set of unknown reservoirs, if two experimenters each independently picks a reference reservoir and uses this technique to measure the temperatures of all the unknown reservoirs, they should obtain two sets of temperature values that are consistent up to a scaling factor, where the scaling factor is the ratio of the two reference reservoir temperatures.
 
 To demonstrate this, let's take three reservoirs at temperatures $$T$$, $$T_{R1}$$, and $$T_{R2}$$, where $$T$$ is an unknown temperature and $$T_{R1}$$ and $$T_{R2}$$ are two different choices of reference temperatures. Consider these two cases:
@@ -50,12 +56,7 @@ $$
 
 But we know for the Carnot engine of Case 1 that $$\lvert Q/Q_{R1} \rvert = T/T_{R1}$$. Therefore, we have $$\lvert Q_{R2B}/Q_{R2A}\rvert = 1$$. Therefore, given a Carnot engine of Case 1, we can always construct two Carnot engines $$A$$ and $$B$$ so that they are each sized to match the Carnot engine of Case 1 at the temperatures $$T$$ and $$T_{R1}$$, and furthermore so that they share a common value (up to a potential negative sign) of heat flow $$Q_{R2}$$ at $$T_{R2}$$. 
 
-
-This means that we can iterate on this process and build up any arbitrary number of Carnot engines in series, with the lowest engine connected to the lowest temperature and the highest engine connected to the highest temperature, and at every intermediate temperature 
-
-, and the net flow of heat is zero for the reservoir at $$T_2$$, no matter what we choose for $$T_1$$, $$T_2$$, and $$T_3$$. This means that from the perspective of the external environment, the two Carnot engines $$A$$ and $$B$$ in series (Case 1) is equivalent to a single Carnot engine (Case 2).
-
-And we see that this is a self-consistent way to define temperature because if we happened to 
+Therefore, if experimenter Alice measures the unknown temperature using a reference reservoir at $$T_{R1}$$ defined to be at 1 degree, the result in Alice's temperature scale would be $$T_{Alice} = \lvert Q/Q_{R1} \rvert$$. Similarly, experimenter Bob, using reference $$T_{R2}$$ defined to be at 1 degree, would measure in Bob's temperature scale $$T_{Bob} = \lvert Q/Q_{R2} \rvert$$. And you could always convert between the two temperature scales using the scaling factor $$\lvert Q_{R1}/Q_{R2} \rvert$$. Therefore we have the consistency that were looking for.
 
 
 Let’s take a step back and think about what this means.
