@@ -13,15 +13,15 @@ The efficiency of a Carnot heat engine is a universal property that directly fol
 
 >The efficiency of an ideal engine...to find this universal law...is one of the very beautiful pieces of reasoning in physics
 
-That section of the *Feynman Lectures* is a must-read, to appreciate this beauty referred to by Feynman. In my case, however, I found that section pretty challenging and had to re-read it many times before I finally got it. So I would like to provide a simplified explanation that I hope retains the essence.
+That section of the *Feynman Lectures* is a must-read, to appreciate this beauty referred to by Feynman. However, I found that section pretty challenging and had to re-read it many times before I finally got it. So I would like to provide a simplified and more accessible explanation that I hope retains the essence.
 
-The main question is: what is the efficiency of a Carnot heat engine? We know (see my prior [post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/01/CarnotEngine.html){:target="_blank"}) that the Second Law of Thermodynamics tells us that for any two given temperatures, all Carnot engines connected to those two temperatures have the same efficiency. This means that if you consider the heat flow between the Carnot engine and the first temperature reservoir, and compare that to the heat flow between the Carnot engine and the second temperature reservoir, the ratio of the two heat flows must be a value that only depends on the two temperatures and not on any other details of the Carnot engine. And so the question is: what exactly does the efficiency depend on the two temperatures?
+The main question is: what is the efficiency of a Carnot heat engine? We know (see my prior [post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/01/CarnotEngine.html){:target="_blank"}) that the Second Law of Thermodynamics tells us that for any two given temperatures, all Carnot engines connected to those two temperatures have the same efficiency. This means that if you consider the heat flow between the Carnot engine and the first temperature reservoir, and compare that to the heat flow between the Carnot engine and the second temperature reservoir, the ratio of the two heat flows must be a value that only depends on the two temperatures and not on any other details of the Carnot engine. And so the question is: how exactly does the efficiency depend on the two temperatures?
 
 To answer this, the main idea is to define a new, fundamental type of temperature scale, the *thermodynamic temperature scale*, that is universally defined and independent of any specific material or measurement device. Contrast this with the mercury temperature scale that is more familiar, where we measure the expansion of liquid mercury and use that as the temperature scale, which clearly is very much dependent on the specific properties of mercury.
 
-Here's what we do: start with a reservoir at some specific reference temperature $$T_R$$ that we pick for convenience (and of course we would need to standardize this so that different organizations can agree on the temperature scale), and we define this reference temperature to be "one degree" in our thermodynamic temperature scale. We then take a new reservoir at a different temperature $$T_{new}$$ and consider a Carnot engine between those two temperatures. Let the heat flows be $$Q_{new}$$ from the new temperature $$T_{new}$$ and $$Q_R$$ from the reference temperature $$T_R=1$$. 
+Here's what we do: start with a reservoir at some specific reference temperature $$T_R$$ that we pick for convenience (and of course we would need to standardize this so that different organizations can agree on the temperature scale), and define this reference temperature to be "one degree" in our thermodynamic temperature scale. Then, take a new reservoir at a different temperature $$T_{new}$$ and consider a Carnot engine between those two temperatures. Let the heat flows be $$Q_{new}$$ from the new temperature $$T_{new}$$ and $$Q_R$$ from the reference temperature $$T_R=1$$. 
 
-Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$\lvert Q_{new}/Q_R \rvert$$.
+Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then the ratio $$\lvert Q_{new}/Q_R \rvert$$.
 
 Using the thermodynamic temperature scale, the efficiency of a Carnot engine operating between a higher temperature $$T_1$$ and a lower temperature $$T_2$$ is
 
@@ -61,16 +61,17 @@ But we know for the Carnot engine of Case 1 that $$\lvert Q/Q_{R1} \rvert = T/T_
 
 Therefore, if experimenter Alice measures the unknown temperature using a reference reservoir at $$T_{R1}$$ defined to be at 1 degree, the result in Alice's temperature scale would be $$T_{Alice} = \lvert Q/Q_{R1} \rvert$$. Similarly, experimenter Bob, using reference $$T_{R2}$$ defined to be at 1 degree, would measure in Bob's temperature scale $$T_{Bob} = \lvert Q/Q_{R2} \rvert$$. And you could always convert between the two temperature scales using the scaling factor $$\lvert Q_{R1}/Q_{R2} \rvert$$. Therefore we have the consistency that were looking for.
 
+Finally, we won't discuss it here, but the thermodynamic temperature scale can be shown to be the same as the temperatur measured by an ideal-gas thermometer. 
 
-Let’s take a step back and think about what this means.
+Let’s take a step back and think about what we just went through.
 
-By using the ratios of heat flow of Carnot engines to define our ratio of temperatures, we see that due to the Second Law of Thermodynamics, 
+- The Second Law of Thermodynamics led us to conclude that all Carnot engines operating between a given pair of temperatures must have the same efficiency
+- This implies that the ratio of heat flows for any Carnot engine is uniquely determined by its temperature pair
+- Therefore, we can take any set of reservoirs at different temperatures and associate with them a set of heat flows that result when we attach various Carnot engines to those reservoirs. The absolute value of the ratio of heat flows for any pair of reservoirs is unique, independent of what combination of Carnot engines we choose to hook up.
+- This allows us to define a thermodynamic temperature scale that is simply proportional to the ratio of heat flows
+- Furthermore, any Carnot engine operating between two temperatures can be considered to be a combination of two Carnot engine in series, where the two Carnot engines share a third temperature/reservoir
+- Therefore, any experimenter can arbitrarily choose a reference reservoir with temperature defined to be one degree, and the resultant measurements made this way will be consistent with any other experimenter's choice of reference reservoir, up to a scaling constant
 
-
-
-
-
-give the efficiency formula
 ---
 
 [Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109960227623861947){:target="_blank"}
