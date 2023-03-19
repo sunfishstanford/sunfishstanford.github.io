@@ -21,30 +21,34 @@ The main idea behind the solution is to define a new, fundamental type of temper
 
 Here's what we do: we start with a reservoir at some specific reference temperature $$T_R$$ that we pick for convenience (and of course we would need to standardize this so that different organizations can agree on the temperature scale), and we define this reference temperature to be "one degree" in our thermodynamic temperature scale. We then take a new reservoir at a different temperature $$T_{new}$$ and consider a Carnot engine between those two temperatures. Let the heat flows be $$Q_{new}$$ from the new temperature $$T_{new}$$ and $$Q_R$$ from the reference temperature $$T_R=1$$. 
 
-Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which is simply $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the reservoir and the reference reservoir at the temperature defined to be $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$\lvert Q_{new}/Q_R \rvert$$.
+Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$\lvert Q_{new}/Q_R \rvert$$.
 
-We would like this measurement technique to yield consistent values for temperature, no matter how we happened to pick the reference reservoir. So to think about this, let's take any three reservoirs at temperatures $$T_1$$, $$T_2$$, and $$T_3$$, where $$T_1$$ is the highest and $$T_3$$ is the lowest. Consider these two cases:
+We would like this measurement technique to yield consistent temperature values, irrespective of how we choose to designate the reference reservoir. This means that for a specific set of unknown reservoirs, if two experimenters each independently picks a reference reservoir and uses this technique to measure the temperatures of all the unknown reservoirs, they should obtain two sets of temperature values that are consistent up to a scaling factor, where the scaling factor is the ratio of the two reference reservoir temperatures.
 
-- Case 1: a single Carnot engine between $$T_1$$ and $$T_3$$ with respective heat flows $$Q_1$$ and $$Q_3$$
-- Case 2: two Carnot engines $$A$$ and $$B$$ in series, with one engine between $$T_1$$ and $$T_2$$ and another engine between $$T_2$$ and $$T_3$$. 
+To demonstrate this, let's take three reservoirs at temperatures $$T$$, $$T_{R1}$$, and $$T_{R2}$$, where $$T$$ is an unknown temperature and $$T_{R1}$$ and $$T_{R2}$$ are two different choices of reference temperatures. Consider these two cases:
 
-For Case 2, the two Carnot engines are sized to be consistent with Case 1, which means that engine $$A$$ gets heat flow $$ Q_1$$ from $$T_ 1$$ and puts heat flow $$Q_ 2A$$ into $$T_ 2$$; and engine $$B$$ gets heat flow $$Q_ 2B$$ from $$T_ 2$$ and puts heat flow $$Q_ 3$$ into $$T_ 3$$. Then since the ratio of heat flows for any Carnot engine between two temperatures is just the ratio of the thermodynamic temperatures, we must have
+- Case 1: a single Carnot engine between $$T$$ and $$T_{R1}$$ with respective heat flows $$Q$$ and $$Q_{R1}$$
+- Case 2: two Carnot engines $$A$$ and $$B$$ in series, with one engine between $$T$$ and $$T_{R2}$$ and another engine between $$T_{R2}$$ and $$T_{R1}$$. 
 
-$$
-\frac{Q_{1}}{Q_{2A}} = \frac{T_{1}}{T_{2}}
-$$
+For Case 2, we size the two Carnot engines to be consistent with Case 1, which means that engine $$A$$ has heat flow $$Q$$ from $$T$$ and heat flow $$Q_{R2A}$$ into $$T_{R2}$$; and engine $$B$$ has heat flow $$Q_{R2B}$$ from $$T_{R2}$$ and heat flow $$Q_{R1}$$ from $$T_{R1}$$. Then since the ratio of heat flows for any Carnot engine between two temperatures is just the ratio of the thermodynamic temperatures, we must have
 
 $$
-\frac{Q_{2B}}{Q_{3}} = \frac{T_{2}}{T_{3}}
+\lvert \frac{Q}{Q_{R2A}} \rvert = \frac{T}{T_{R2}}
+$$
+
+and
+
+$$
+\lvert \frac{Q_{R2B}}{Q_{R1}} \rvert = \frac{T_{R2}}{T_{R1}}
 $$
 
 Therefore, multiplying the two equations together,
 
 $$
-\frac{Q_1}{Q_3} \frac{Q_{2B}}{Q_{2A}} = \frac{T_1/T_3}
+\lvert \frac{Q}{Q_{R1}} \frac{Q_{R2B}}{Q_{R2A}} \rvert = \frac{T/T_{R1}}
 $$
 
-But we know for the Carnot engine of Case 1 that $$Q_1/Q_3 = T_1/T_3$$. Therefore, we have $$Q_{2B}/Q_{2A} = 1$$. This means that we can iterate on this process and build up any arbitrary number of Carnot engines in series, with the lowest engine connected to the lowest temperature and the highest engine connected to the highest temperature, and at every intermediate temperature 
+But we know for the Carnot engine of Case 1 that $$\lvert Q/Q_{R1} \rvert = T/T_{R1}$$. Therefore, we have $$\lvert Q_{$2B}/Q_{$2A}\rvert = 1$$. This means that we can iterate on this process and build up any arbitrary number of Carnot engines in series, with the lowest engine connected to the lowest temperature and the highest engine connected to the highest temperature, and at every intermediate temperature 
 
 , and the net flow of heat is zero for the reservoir at $$T_2$$, no matter what we choose for $$T_1$$, $$T_2$$, and $$T_3$$. This means that from the perspective of the external environment, the two Carnot engines $$A$$ and $$B$$ in series (Case 1) is equivalent to a single Carnot engine (Case 2).
 
