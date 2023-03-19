@@ -15,11 +15,11 @@ The efficiency of a Carnot heat engine is a universal property that directly fol
 
 That section of the *Feynman Lectures* is a must-read, to appreciate this beauty referred to by Feynman. In my case, however, I found that section pretty challenging and had to re-read it many times before I finally got it. So I would like to provide a simplified explanation that I hope retains the essence.
 
-The main question is: what is the efficiency of a Carnot heat engine? We know (see my prior [post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/01/CarnotEngine.html){:target="_blank"}) that the Second Law of Thermodynamics tells us that for any two given temperatures, all Carnot engines connected to those two temperatures have the same efficiency. This means that if you consider the heat flow between the Carnot engine and the first temperature reservoir, and compare that to the heat flow between the Carnot engine and the second temperature reservoir, the ratio of the two heat flows must be a value that only depends on the two temperatures and not on any other details of the Carnot engine. And so the question is: what is the precise dependence of the efficiency on the two temperatures?
+The main question is: what is the efficiency of a Carnot heat engine? We know (see my prior [post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/01/CarnotEngine.html){:target="_blank"}) that the Second Law of Thermodynamics tells us that for any two given temperatures, all Carnot engines connected to those two temperatures have the same efficiency. This means that if you consider the heat flow between the Carnot engine and the first temperature reservoir, and compare that to the heat flow between the Carnot engine and the second temperature reservoir, the ratio of the two heat flows must be a value that only depends on the two temperatures and not on any other details of the Carnot engine. And so the question is: what exactly does the efficiency depend on the two temperatures?
 
-The main idea behind the solution is to define a new, fundamental type of temperature scale, the *thermodynamic temperature scale*, that is universally defined and independent of any specific material or measurement device. Contrast this with the mercury temperature scale that is more familiar, where we measure the expansion of liquid mercury and use that as the temperature scale, which clearly is very much dependent on the specific properties of mercury.
+To answer this, the main idea is to define a new, fundamental type of temperature scale, the *thermodynamic temperature scale*, that is universally defined and independent of any specific material or measurement device. Contrast this with the mercury temperature scale that is more familiar, where we measure the expansion of liquid mercury and use that as the temperature scale, which clearly is very much dependent on the specific properties of mercury.
 
-Here's what we do: we start with a reservoir at some specific reference temperature $$T_R$$ that we pick for convenience (and of course we would need to standardize this so that different organizations can agree on the temperature scale), and we define this reference temperature to be "one degree" in our thermodynamic temperature scale. We then take a new reservoir at a different temperature $$T_{new}$$ and consider a Carnot engine between those two temperatures. Let the heat flows be $$Q_{new}$$ from the new temperature $$T_{new}$$ and $$Q_R$$ from the reference temperature $$T_R=1$$. 
+Here's what we do: start with a reservoir at some specific reference temperature $$T_R$$ that we pick for convenience (and of course we would need to standardize this so that different organizations can agree on the temperature scale), and we define this reference temperature to be "one degree" in our thermodynamic temperature scale. We then take a new reservoir at a different temperature $$T_{new}$$ and consider a Carnot engine between those two temperatures. Let the heat flows be $$Q_{new}$$ from the new temperature $$T_{new}$$ and $$Q_R$$ from the reference temperature $$T_R=1$$. 
 
 Then, the definition of the thermodynamic temperature is very simple: we define the thermodynamic temperature of the new reservoir to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then measured to be the ratio $$\lvert Q_{new}/Q_R \rvert$$.
 
@@ -30,7 +30,7 @@ To demonstrate this, let's take three reservoirs at temperatures $$T$$, $$T_{R1}
 - Case 1: a single Carnot engine between $$T$$ and $$T_{R1}$$ with respective heat flows $$Q$$ and $$Q_{R1}$$
 - Case 2: two Carnot engines $$A$$ and $$B$$ in series, with one engine between $$T$$ and $$T_{R2}$$ and another engine between $$T_{R2}$$ and $$T_{R1}$$. 
 
-For Case 2, we size the two Carnot engines to be consistent with Case 1, which means that engine $$A$$ has heat flow $$Q$$ from $$T$$ and heat flow $$Q_{R2A}$$ into $$T_{R2}$$; and engine $$B$$ has heat flow $$Q_{R2B}$$ from $$T_{R2}$$ and heat flow $$Q_{R1}$$ from $$T_{R1}$$. Then since the ratio of heat flows for any Carnot engine between two temperatures is just the ratio of the thermodynamic temperatures, we must have
+For Case 2, we size the two Carnot engines to be consistent with Case 1, which means that engine $$A$$ has heat flow $$Q$$ from $$T$$ and heat flow $$Q_{R2A}$$ into $$T_{R2}$$; and engine $$B$$ has heat flow $$Q_{R2B}$$ from $$T_{R2}$$ and heat flow $$Q_{R1}$$ from $$T_{R1}$$. Then, since the ratio of heat flows for any Carnot engine between two temperatures is just the ratio of the thermodynamic temperatures, we must have
 
 $$
 \lvert \frac{Q}{Q_{R2A}} \rvert = \frac{T}{T_{R2}}
@@ -45,10 +45,13 @@ $$
 Therefore, multiplying the two equations together,
 
 $$
-\lvert \frac{Q}{Q_{R1}} \frac{Q_{R2B}}{Q_{R2A}} \rvert = \frac{T/T_{R1}}
+\lvert \frac{Q}{Q_{R1}} \frac{Q_{R2B}}{Q_{R2A}} \rvert = \frac{T}/{T_{R1}}
 $$
 
-But we know for the Carnot engine of Case 1 that $$\lvert Q/Q_{R1} \rvert = T/T_{R1}$$. Therefore, we have $$\lvert Q_{$2B}/Q_{$2A}\rvert = 1$$. This means that we can iterate on this process and build up any arbitrary number of Carnot engines in series, with the lowest engine connected to the lowest temperature and the highest engine connected to the highest temperature, and at every intermediate temperature 
+But we know for the Carnot engine of Case 1 that $$\lvert Q/Q_{R1} \rvert = T/T_{R1}$$. Therefore, we have $$\lvert Q_{R2B}/Q_{R2A}\rvert = 1$$. Therefore, given a Carnot engine of Case 1, we can always construct two Carnot engines $$A$$ and $$B$$ so that they are each sized to match the Carnot engine of Case 1 at the temperatures $$T$$ and $$T_{R1}$$, and furthermore so that they share a common value (up to a potential negative sign) of heat flow $$Q_{R2}$$ at $$T_{R2}$$. 
+
+
+This means that we can iterate on this process and build up any arbitrary number of Carnot engines in series, with the lowest engine connected to the lowest temperature and the highest engine connected to the highest temperature, and at every intermediate temperature 
 
 , and the net flow of heat is zero for the reservoir at $$T_2$$, no matter what we choose for $$T_1$$, $$T_2$$, and $$T_3$$. This means that from the perspective of the external environment, the two Carnot engines $$A$$ and $$B$$ in series (Case 1) is equivalent to a single Carnot engine (Case 2).
 
