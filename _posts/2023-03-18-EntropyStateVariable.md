@@ -9,11 +9,13 @@ title: "Entropy is a state variable!"
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimeters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
-$$
-\def\dbar{{\mathchar'26\mkern-12mu d}} 
-\dbar d
-$$
+<div style="display:none">
+$
+\newcommand\testmacro[2]{\mathbf{F\alpha}(#1)^{#2}}
+$
+</div>
 
+\testmacro{7}{3}
 
 In thermodynamics, we have state variables (e.g., temperature, pressure, volume) that are properties uniquely determined by the system's equilibrium state and not dependent on the prior history. We know that because of a huge number of experiments that measure those state variables, using various sensors and gauges that measure temperature, pressure, volume, etc., and demonstrate that unique combinations of state variables map to unique states. In other words, we directly determine via experiments that those quantities are state variables because we have never found a negative result.
 
