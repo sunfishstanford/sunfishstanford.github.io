@@ -23,6 +23,8 @@ Here's what we do: start with a reservoir at some specific reference temperature
 
 Then, the definition of the thermodynamic temperature of the new reservoir is very simple: it is defined to be $$T_{new} = \lvert Q_{new}/Q_R \rvert T_R$$, which simplifies to $$\lvert Q_{new}/Q_R \rvert$$. In other words, for any Carnot engine the ratio of thermodynamic temperatures is the same as the absolute value of the ratio of heat flows. So to measure the temperature of an unknown reservoir, we connect a Carnot engine between the unknown reservoir and the reference reservoir at $$T_R=1$$, we measure the heat flows $$Q_{new}$$ and $$Q_R$$, and the unknown temperature is then the ratio $$\lvert Q_{new}/Q_R \rvert$$.
 
+BTW, we know that for any pair of temperatures, the higher temperature will have a higher absolute value of heat flow. This is due to the emperical observation that we can withdraw heat from a hotter temperature and partially convert it to work and deposit the rest of the heat into a cooler temperature; but it's impossible to withdraw heat from a cooler temperature and partially convert it to work while depositing the rest of the heat into a hotter temperature. This means that we will always measure a lower thermodynamic temperature less than one degree when $$T_{new}$$ is cooler than $$T_R$$ and vice versa, which is good!
+
 Therefore, using the thermodynamic temperature scale, the efficiency of a Carnot engine operating between a higher temperature $$T_1$$ and a lower temperature $$T_2$$ is
 
 $$
@@ -67,10 +69,9 @@ Key Insights
 -------------
 Let’s take a step back and think about what we just went through.
 
-- The Second Law of Thermodynamics led us to conclude that all Carnot engines operating between a given pair of temperatures must have the same efficiency
-- This implies that the ratio of heat flows for any Carnot engine is uniquely determined by its temperature pair
-- Therefore, we can take any set of reservoirs at different temperatures and associate with them a set of heat flows that result when we attach various Carnot engines to those reservoirs. The absolute value of the ratio of heat flows for any pair of reservoirs is unique, independent of what combination of Carnot engines we choose to hook up.
-- This allows us to define a thermodynamic temperature scale that is simply proportional to the ratio of heat flows
+- The Second Law of Thermodynamics led us to conclude that all Carnot engines operating between a given pair of temperatures must have the same efficiency. Therefore, given a pair of temperatures, there will be a unique absolute value of the ratio of heat flows for the temperature pair.
+- We are free to construct different temperature scales by mapping an existing temperature scale to a new scale, as long as the mapping is monotonically increasing. This lets us preserve our emperical observations that certain phenomena change in specific directions as temperature increases.
+- Therefore, we are able to define a *thermodynamic temperature scale* that is simply proportional to the absolute value of the ratio of heat flows when one of the temperatures is anchored at a reference temperature
 - Furthermore, any Carnot engine operating between two temperatures can be considered to be a combination of two Carnot engine in series, where the two Carnot engines share a third temperature/reservoir
 - Therefore, any experimenter can arbitrarily choose a reference reservoir with its temperature defined to be one degree, and the resultant temperature measurements will be consistent with any other experimenter's choice of reference reservoir, up to a scaling constant.
 
