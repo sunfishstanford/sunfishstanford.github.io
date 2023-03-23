@@ -10,9 +10,9 @@ title: "Entropy is a state variable!"
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimeters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
 <div style="display:none">
-$
+$$
 \newcommand\testmacro[2]{\mathbf{F\alpha}(#1)^{#2}}
-$
+$$
 </div>
 
 $$\testmacro{7}{3}$$
