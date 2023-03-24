@@ -25,7 +25,7 @@ Let's find the path integral of $$\delta Q / T$$ around the whole cycle, for a C
 In the high temperature part at temperature $$T_H$$, the integral of $$\delta Q / T$$ is
 
 $$
-\left\int\limits_{\rm High-temp} \frac{\delta Q}{T} = \frac{1}{T_H} \int\limits_{\rm High-temp} \delta Q = \frac{\lvert Q_H \rvert}{T_H}
+\bigint\limits_{\rm High-temp} \frac{\delta Q}{T} = \frac{1}{T_H} \int\limits_{\rm High-temp} \delta Q = \frac{\lvert Q_H \rvert}{T_H}
 $$
 
 where $$Q_H$$ is the total heat flow during the high temperature part.
