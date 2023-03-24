@@ -14,31 +14,37 @@ In thermodynamics, we have state variables (e.g., temperature, pressure, volume)
 
 Thermodynamics also tells us that entropy is a state variable. However, we don't have a sensor that measures entropy directly. So how do we make sense of why entropy is a state variable?
 
-The answer is that a quantity is a state variable if and only if it has a well defined gradient, such that the path integral of the gradient is only dependent on the start and end points and not dependent on the precise connecting path (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/02/24/imperfectDifferential.html){:target="_blank"}). Such a gradient is called a *perfect differential*.
+The answer is that a quantity is a state variable if and only if it has a well defined gradient, such that the path integral of the gradient over a closed path is zero, for any arbitrary closed path (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/02/24/imperfectDifferential.html){:target="_blank"}). Such a gradient is called a *perfect differential*.
 
 Therefore, we just need to show that entropy has a perfect differential. And to do that, we use the profound properties of a Carnot heat engine.
 
 In a Carnot engine, there are two temperatures connected to the engine, and two heat flows at those two temperatures. As the Carnot engine is operated through its cycle, it traces a closed path through the state space. The state space path of the cycle is comprised of four parts, namely a high temperature part, a low temperature part, and two adiabatic parts where no heat flows into or out of the engine.
 
-Let's find the path integral of $$\delta Q / T$$ around the whole cycle. In the two adiabatic parts of the cycle, the heat flow is zero, and therefore they do not contribute to the integral. 
+Let's find the path integral of $$\delta Q / T$$ around the whole cycle, for a Carnot cycle operating in the forward direction, with positive heat flow at the high temperature, positive work done on the external environment, and negative heat flow at the low temperature. In the two adiabatic parts of the cycle, the heat flow is zero, and therefore they do not contribute to the integral. 
 
 In the high temperature part at temperature $$T_H$$, the integral of $$\delta Q / T$$ is
 
 $$
-\int\limits_{\rm High temp} \delta Q/T_H = \frac{1}{T_H} \int\limits_{\rm High temp} \delta Q = \frac{Q_H}{T_H}
+\int\limits_{\rm High-temp} \frac{\delta Q}{T} = \frac{1}{T_H} \int\limits_{\rm High-temp} \delta Q = \frac{\lvert Q_H \rvert}{T_H}
+$$
+where $$Q_H$$ is the total heat flow during the high temperature part.
+
+Similarly, in the low temperature part at temperature $$T_L$$, the integral of $$\delta Q / T$$ is
+
+$$
+\int\limits_{\rm Low-temp} \frac{\delta Q}{T} = \frac{1}{T_L} \int\limits_{\rm Low-temp} \delta Q = \frac{-\vert Q_L \rvert}{T_L}
+$$
+where $$Q_L$$ is the total heat flow during the low temperature part.
+
+Therefore, because the thermodynamic temperature scale is defined such that the ratio of the temperatures is equal to the absolute value of the ratio of the heat flows (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/18/ThermodynamicTemperature.html){:target="_blank"}), the path integral over the entire closed cycle is zero.
+
+Since this holds true for any arbitrary Carnot engine cycle, and since any closed path in the state space can be expressed as a sum of Carnot cycles, we have shown that $$\delta Q/T$$ is a perfect differential. We call this the perfect differential
+
+$$
+dS = \frac{\delta Q}{T}
 $$
 
-
-
-
-
-$$
-\begin{aligned}
-\eta(T_1,T_2) &= \frac{\vert Q_1 \vert - \vert Q_2 \vert}{\vert Q_1 \vert}\\
-&= 1-\frac{T_2}{T_1}
-\end{aligned}
-$$
-
+and its integral gives us the state variable $$S$$, which, of course, is the entropy of the system!!
 
 ---
 
