@@ -20,10 +20,12 @@ Therefore, we just need to show that entropy has a perfect differential. And to 
 
 In a Carnot engine, there are two temperatures connected to the engine, and two heat flows at those two temperatures. As the Carnot engine is operated through its cycle, it traces a closed path through the state space. The state space path of the cycle is comprised of four parts, namely a high temperature part, a low temperature part, and two adiabatic parts where no heat flows into or out of the engine.
 
-In the high temperature part, we calculate the total heat flow as 
+Let's find the path integral of $$\delta Q / T$$ around the whole cycle. In the two adiabatic parts of the cycle, the heat flow is zero, and therefore they do not contribute to the integral. 
+
+In the high temperature part at temperature $$T_H$$, the integral of $$\delta Q / T$$ is
 
 $$
-Q_H = \int\limits_1 \delta Q T_H
+\int\limits_{\rm High temp} \delta Q/T_H = \frac{1}{T_H} \int\limits_{\rm High temp} \delta Q = \frac{Q_H}{T_H}
 $$
 
 
