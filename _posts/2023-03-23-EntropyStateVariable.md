@@ -10,7 +10,7 @@ title: "Entropy is a state variable!"
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimeters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
 
-In thermodynamics, we have state variables (e.g., temperature, pressure, volume) that are properties uniquely determined by the system's equilibrium state and not dependent on the prior history. We know this because of a very large number of experiments that measured those state variables using various sensors and gauges for temperature, pressure, volume, etc., and demonstrated that unique sets of state variables map to unique states. In other words, a large body of empirical evidence has led us to conclude that those quantities are state variables.
+In thermodynamics, we have state variables (e.g., temperature, pressure, volume) that are properties uniquely determined by the system's equilibrium state and not dependent on the prior history. We know this because of a very large number of experiments that measured those state variables using various sensors and gauges for temperature, pressure, volume, etc., and demonstrated that unique sets of state variables map to unique states. In other words, a large body of empirical evidence has led us to conclude that those quantities are state variables. In fact, we could say that the concepts of temperature, pressure, volume, etc. were invented precisely *because* they are state variables that are directly observable.
 
 Thermodynamics also tells us that entropy is a state variable. However, we don't have a sensor that measures entropy directly. So how do we make sense of why entropy is a state variable?
 
@@ -36,17 +36,17 @@ $$
 \int\limits_{\rm Low-temp} \frac{\delta Q}{T} = \frac{1}{T_L} \int\limits_{\rm Low-temp} \delta Q = \frac{-\vert Q_L \rvert}{T_L}
 $$
 
-where $$Q_L$$ is the total heat flow during the low temperature part.
+where $$Q_L$$ is the total heat flow during the low temperature part (the negative sign means that heat flows in the direction from the Carnot engine to the low temperature reservoir).
 
 Therefore, because the thermodynamic temperature scale is defined such that the ratio of the temperatures is equal to the absolute value of the ratio of the heat flows (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/18/ThermodynamicTemperature.html){:target="_blank"}), the path integral over the entire closed cycle is zero.
 
-Since this holds true for any arbitrary Carnot engine cycle, and since any closed path in the state space can be expressed as a sum of Carnot cycles, we have shown that $$\delta Q/T$$ is a perfect differential. We call this the perfect differential
+Since this holds true for any arbitrary Carnot engine cycle, and since any closed path in the state space can be expressed as a sum of Carnot cycles, we have shown that $$\delta Q/T$$ is a perfect differential. We call this perfect differential
 
 $$
 dS = \frac{\delta Q}{T}
 $$
 
-and its integral gives us the state variable $$S$$, which, of course, is the entropy of the system!!
+and its integral gives us the state variable $$S$$, which of course is the entropy of the system!!
 
 ---
 
