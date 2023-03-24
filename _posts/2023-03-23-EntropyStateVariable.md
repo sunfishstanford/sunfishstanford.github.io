@@ -25,8 +25,9 @@ Let's find the path integral of $$\delta Q / T$$ around the whole cycle, for a C
 In the high temperature part at temperature $$T_H$$, the integral of $$\delta Q / T$$ is
 
 $$
-\int\limits_{\rm High-temp} \frac{\delta Q}{T} = \frac{1}{T_H} \int\limits_{\rm High-temp} \delta Q = \frac{\lvert Q_H \rvert}{T_H}
+\left\int\limits_{\rm High-temp} \frac{\delta Q}{T} = \frac{1}{T_H} \int\limits_{\rm High-temp} \delta Q = \frac{\lvert Q_H \rvert}{T_H}
 $$
+
 where $$Q_H$$ is the total heat flow during the high temperature part.
 
 Similarly, in the low temperature part at temperature $$T_L$$, the integral of $$\delta Q / T$$ is
@@ -34,6 +35,7 @@ Similarly, in the low temperature part at temperature $$T_L$$, the integral of $
 $$
 \int\limits_{\rm Low-temp} \frac{\delta Q}{T} = \frac{1}{T_L} \int\limits_{\rm Low-temp} \delta Q = \frac{-\vert Q_L \rvert}{T_L}
 $$
+
 where $$Q_L$$ is the total heat flow during the low temperature part.
 
 Therefore, because the thermodynamic temperature scale is defined such that the ratio of the temperatures is equal to the absolute value of the ratio of the heat flows (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/18/ThermodynamicTemperature.html){:target="_blank"}), the path integral over the entire closed cycle is zero.
