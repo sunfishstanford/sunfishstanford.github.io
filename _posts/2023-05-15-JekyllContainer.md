@@ -41,7 +41,7 @@ docker build -t j-image5 .
 docker compose up
 ```
 
-4. Open http://localhost:4000 to view the document, and reload to view the regenerated version.
+4. Open [http://localhost:4000](http://localhost:4000) to view the document, and reload to view the regenerated version.
 
 
 `Dockerfile`
