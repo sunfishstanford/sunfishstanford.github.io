@@ -37,7 +37,7 @@ Step-by-step Instructions
 3. Run the following commands:
 
 ```bash
-docker build -t j-image5 .
+docker build -t j-image .
 docker compose up
 ```
 
