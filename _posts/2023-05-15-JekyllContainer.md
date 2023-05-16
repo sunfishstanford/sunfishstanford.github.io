@@ -94,7 +94,6 @@ services:
 
 ---
 
-[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110076556293445667){:target="_blank"}
-
+[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110377025214843206){:target="_blank"}
 
 
