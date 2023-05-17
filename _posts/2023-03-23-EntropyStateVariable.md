@@ -50,7 +50,7 @@ and its integral gives us the state variable $$S$$, which of course is the entro
 
 ---
 
-[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110076556293445667){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110076556293445667){:target="_blank"}
 
 
 

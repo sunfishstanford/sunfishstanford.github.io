@@ -77,5 +77,5 @@ Let’s take a step back and think about what we just went through.
 
 ---
 
-[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110048426302213407){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110048426302213407){:target="_blank"}
 

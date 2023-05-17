@@ -40,4 +40,4 @@ If the work quantity is zero but the two heat quantities are nonzero, that means
 
 ---
 
-[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109960227623861947){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109960227623861947){:target="_blank"}

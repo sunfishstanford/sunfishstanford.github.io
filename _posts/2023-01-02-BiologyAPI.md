@@ -26,4 +26,4 @@ Useful Links
 
 ---
 
-[Comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109624369727398121){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109624369727398121){:target="_blank"}
