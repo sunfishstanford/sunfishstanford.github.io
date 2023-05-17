@@ -49,7 +49,7 @@ And so we arrive at the statement from Uhlenbeck and Ford of the second law of t
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110076556293445667){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110382384843307556){:target="_blank"}
 
 
 
