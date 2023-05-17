@@ -40,7 +40,7 @@ Since the entropy $$S$$ is a state variable that is uniquely defined for every p
 
 So for the first engine, since it is a reversible engine, its increase in entropy of $$\delta S$$ must be counterbalanced by an opposite change in entropy of $$-\delta S$$ in the temperature reservoir at $$T_H$$. This is required because the change in total entropy for the whole system (reservoir plus engine) for a reversible process is zero.
 
-And for the second engine, because its heat inflow $$Q_{Irrev}$$ during the STEP is smaller compared to $$Q_{Rev}$$ for the first engine, the change in entropy of the temperature reservoir must be a smaller drop, which means that at the system level the entropy increase in the second heat engine (which is the same as the first engine, as we showed above) will dominate over the entropy decrease in the reservoir, and therefore the total entropy for the whole system will *INCREASE*. 
+And for the second engine, because its heat inflow $$Q_{Irrev}$$ during the STEP is smaller compared to $$Q_{Rev}$$ for the first engine, the change in entropy of the temperature reservoir must be a smaller drop, which means that at the system level the entropy increase in the second heat engine (which is the same $$\delta S$$ as the first engine, as we showed above) will dominate over the entropy decrease in the reservoir, and therefore the total entropy for the whole system will *INCREASE*. 
 
 And so we arrive at the statement from Uhlenbeck and Ford of the second law of thermodynamics:
 
