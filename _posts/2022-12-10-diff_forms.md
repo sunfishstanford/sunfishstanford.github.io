@@ -21,4 +21,8 @@ Double-clicking for a bit more detail, focusing on one-dimensional integrals:
 
 - The result is that for a given vector field \\(F\\) that is equivalent to a 1-form \\(\omega\\), you can map each value of \\(t\\) (representing a point along the path \\(\gamma\\)) to a real number, and integrating this over \\(t\\) gives us the line integral of \\(F\\).
 
+---
+
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109502521138795810){:target="_blank"}
+
 
