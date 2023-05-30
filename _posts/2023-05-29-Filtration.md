@@ -9,7 +9,7 @@ title: "Confusion about martingales in stochastic processes"
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimiters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
-I started to learn about stochastic calculus because I think many of the most interesting breakthroughs these days, e.g., [diffusion probabilistic models for generative AI](https://www.quantamagazine.org/the-physics-principle-that-inspired-modern-ai-art-20230105/){:target="_blank"}, involve stochastic processes. Much of the math here is unfamiliar to me with my traditional physics background, and it's been fun and also very confusing learning about Lebesgue integrals, measure theory, sigma algebras and Borel sets, rigorous probability theory, etc. For example, even though I thought I knew what random variables are, learning the rigorous definition of random variables has really helped me to understand them more deeply.
+I started to learn about stochastic calculus because I think many of the most interesting breakthroughs these days (e.g., [diffusion probabilistic models for generative AI](https://www.quantamagazine.org/the-physics-principle-that-inspired-modern-ai-art-20230105/){:target="_blank"}) involve stochastic processes. Much of the math here is unfamiliar to me with my traditional physics background, and it's been fun and also very confusing learning about Lebesgue integrals, measure theory, sigma algebras and Borel sets, rigorous probability theory, etc. For example, even though I thought I knew what random variables are, learning the rigorous definition of random variables has really helped me to understand them more deeply.
 
 As I started down this journey, I soon came across the really interesting concept of **martingales**. Just trying to understand the definition of a martingale was very confusing for me!
 
@@ -51,7 +51,7 @@ This one turned out to be a red herring. $$X_{t+1}$$ is certainly not $$\mathcal
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110382384843307556){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110456093484306985){:target="_blank"}
 
 
 
