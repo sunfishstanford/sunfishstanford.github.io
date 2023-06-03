@@ -22,12 +22,9 @@ On the other hand, if there is a random variable that is not $$\mathcal{F}_t$$-m
 So we see that there is a precise correspondence between the $$\sigma$$-field $$\mathcal{F}_t$$ and the set of all possible events that contain information on everything that happened up until time $$t$$. And this is why an expectation conditioned on $$\mathcal{F}_t$$ is equivalent to an expectation conditioned on the information up until time $$t$$. 
 
 
-
-
-
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110456093484306985){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110482651760587530){:target="_blank"}
 
 
 
