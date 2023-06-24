@@ -9,7 +9,7 @@ permalink: /:year/:title:output_ext
 
 We all know that in fields that rely on scientific innovation such as AI, biotech, and sustainable technologies, startups are one of the main sources of innovation and business transformation. 
 
-In order for a new startup's business plan to succeed, a large number of factors must align. Many of those factors have to do with how effectively the startup can execute, such as the founding team's experience and expertise, their ability to raise capital, the size of their target market, etc.
+Of course, in order for a new startup's business plan to succeed, a large number of factors must align. Many of those factors have to do with how effectively the startup can execute, such as the founding team's experience and expertise, their ability to raise capital, the size of their target market, etc.
 
 However, from the thousands of startup business plans I've seen, I think there is one factor that many startups need to consider more carefully: *Why is this an area where a startup has a right to innovate?*
 
@@ -29,7 +29,7 @@ What are some signals that a market may not present startups with the right to i
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110574712715039918){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110600480072828784){:target="_blank"}
 
 
 
