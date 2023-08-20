@@ -17,7 +17,6 @@ This is of course just a metaphor and not an actual physical theory, but it’s 
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110600480072828784){:target="_blank"}
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110922865624784264){:target="_blank"}
 
 
