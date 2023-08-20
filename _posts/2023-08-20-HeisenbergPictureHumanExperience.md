@@ -15,6 +15,8 @@ I think this is a very interesting metaphor for our human experience. Instead of
 
 This is of course just a metaphor and not an actual physical theory, but it’s amusing and thought provoking. For example, maybe this is a way to think about our future potential to learn and to do new things. And maybe this is a way to think about what happens after we die, when our physical selves are no longer, but our memories live on.
 
+It's also fascinating to explore what the difference is between our memory of a person versus the real person, if we don't have the opportunity to physically interact with that person (for example, a friend whom you haven't seen in many years). And then you throw in an AI impersonation of a person (e.g., as in *Black Mirror*) as the AI gets better and better, and it gets more confusing. The difference probably lies in the possibility, or not, of having a real interaction with that person in the future. So the representation of a person (analogous to the Heisenberg state) is whatever it is, but the observables are different.
+
 ---
 
 [Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110922865624784264){:target="_blank"}
