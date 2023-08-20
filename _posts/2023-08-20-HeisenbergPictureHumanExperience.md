@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-categories: ['tech']
+categories: [physics, life]
 title: "A quantum mechanics inspired perspective on our human experience"
 permalink: /:year/:title:output_ext
 
