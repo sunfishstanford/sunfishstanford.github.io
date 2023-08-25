@@ -2,7 +2,7 @@
 layout: post
 usemathjax: true
 categories: [tech]
-title: "Jekyll server running in a container on Apple silicon"
+title: "Jekyll server running in a container on a Mac with Apple silicon"
 
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
