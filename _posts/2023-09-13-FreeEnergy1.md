@@ -41,7 +41,7 @@ $$
 dU = T dS - P dV + \mu dn.
 $$
 
-The $$TdS$$ term is the energy that flows between the System and the Reservoir to maintain thermal equilibrium to keep the temperature fixed at $$T$$. The $$-PdV$$ term is the change in the stored energy, so we would like to isolate this term so that we can integrate that to get the total stored energy. And if the number of moles of the substance is constant, then $$dn=0$$, and we can eliminate the $$\mu dn$$ term. 
+The $$TdS$$ term is the energy that flows between the System and the Reservoir to maintain thermal equilibrium to keep the temperature fixed at $$T$$. The $$-PdV$$ term is the change in the stored energy, so we would like to isolate this term so that we can integrate to get the total stored energy. And if the number of moles of the gas is constant, then $$dn=0$$, and we can eliminate the $$\mu dn$$ term. 
 
 To eliminate the $$TdS$$ term, we define a new quantity $$F$$, the *Helmholtz free energy*,
 
@@ -68,6 +68,10 @@ dF = -PdV,
 $$
 
 isolating the change in stored energy as desired. 
+
+In the special case of an ideas monatomic gas, the behavior of the system is very simple. The internal energy of the gas is $$U = 3/2 nRT$$. Therefore, at constant $$T$$, $$U$$ remains constant. So all the energy from the work that is put into the gas, by compressing the gas, all that energy flows into the Reservoir. So in this case of an ideal monatomic gas, the Reservoir is actually storing all the energy.
+
+For an arbitrary type of gas or other substance in general, we could imagine that the energy is stored in two steps. In Step 1, the gas is isolated from the reservoir, work is done to compress the gas, its energy increases, and its temperature increases. At this point, the gas temperature is higher than the Reservoir temperature, but its entropy has not changed (because the work has been done in a reversible manner). Then in Step 2, a Carnot engine is used to extract work by pumping heat from the gas to the Reservoir, thereby gradually lowering the temperature of the gas until it reaches the Reservoir's temperature of $$T$$. Because heat will have flowed out of the gas during this step, the entropy of the gas will decrease. And the work done by the Carnot engine is performed on the external system, to partially offset the work done in Step 1, but the external system's net work done on the gas will still be positive (because if that were not true, we would then have a perpetual motion machine that violates the Second Law). By breaking this down into these two steps, we see that the $$-PdV$$ term represents the energy coming into the gas from the work done on it, but it is partially or completely cancelled out by the $$TdS$$ term representing the reduction in entropy of the gas, so at least a part of the stored energy is in the Reservoir.
 
 So to answer the original question: we call $$F$$ the "free energy" because it is the stored energy that is available to do useful work on external systems. *It is "free" as in "freedom" in the sense that it is the portion of the internal energy that is not "bound"*; it can be extracted from the System by having the System do work on an external object. [^1]
 
