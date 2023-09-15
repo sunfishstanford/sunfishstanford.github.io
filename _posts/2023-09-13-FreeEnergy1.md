@@ -80,7 +80,6 @@ So to answer the original question: we call $$F$$ the "free energy" because it i
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110574712715039918){:target="_blank"}
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111067078789655621){:target="_blank"}
 
 
