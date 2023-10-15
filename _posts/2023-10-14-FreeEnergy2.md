@@ -61,9 +61,15 @@ $$
 dF = -PdV+ \sum_i \mu_i dn_i
 $$
 
-under constant temperature. As we have seen, this means that the $$TdS$$ term is coupled to the Reservoir to regulate temperature, and all of the other intensive/extensive pairs are coupled to the Client to store energy in the System. Therefore, $$F$$ is the free energy under these conditions.
+under constant temperature. As we discussed above, this means that in Eq. $$\eqref{eq:U}$$ the $$TdS$$ term is coupled to the Reservoir to regulate temperature, and all of the other intensive/extensive pairs are coupled to the Client to store energy in the System. Therefore, $$F$$ is the free energy under these conditions.
 
-The Gibbs free energy, $$G = U - TS + PV$$, gives $$dG = -SdT +VdP + \sum_i \mu_i dn_i$$, which simplifies to
+The Gibbs free energy, $$G = U - TS + PV$$, gives
+
+$$
+dG = -SdT +VdP + \sum_i \mu_i dn_i
+$$
+
+which simplifies to
 
 $$
 dG = \sum_i \mu_i dn_i
