@@ -9,25 +9,32 @@ permalink: /:year/:title:output_ext
 
 In [Part I of this post](https://freeenergy.blog/2023/FreeEnergy1.html){:target="_blank"}, we explained that the word "free" in "free energy" refers to the energy being available to do useful work. Here, we will dive in further to understand the rationale behind two different types of free energy, the [Helmholtz free energy $$F$$](https://en.wikipedia.org/wiki/Helmholtz_free_energy){:target="_blank"} and the [Gibbs free energy $$G$$](https://en.wikipedia.org/wiki/Gibbs_free_energy){:target="_blank"}. 
 
-Why do we need different types of free energy? And why is Gibbs free energy restricted to non-pressure-volume work (AKA mechanical work)? We will dive into this, but first we'll take a step back and think about the bigger picture and why we need to define a reservoir and the environment.
+Why do we need different types of free energy? Why is Gibbs free energy restricted to non-pressure-volume work (AKA mechanical work)? We'll dive into this and more, but first we'll take a step back and think about the bigger picture and why we need to define the reservoir and the environment.
 
-The Reservoir
+The Reservoir and the Client
 --------
 The Reservoir in a thermodynamic system is like the central bank in an economy. It sets the rules of the game. 
 
-In thermodynamics, the Reservoir is an idealized object that is so large that adding or subtracting a small amount of energy will have a minimal impact on its temperature, and therefore we think of the reservoir as *dictating* a fixed temperature $$T$$ on a System that is in thermal contact. This is done by exchanging the right amount of energy between the Reservoir and the System to bring the System to the temperature $$T$$.
+In thermodynamics, the Reservoir is an idealized object that is so large that adding or subtracting a small amount of energy will have a minimal impact on its temperature, and therefore we think of the reservoir as *dictating* a fixed temperature $$T$$ on a System that is in thermal contact. This is done by exchanging the appropriate amount of thermal energy (i.e., heat) between the Reservoir and the System to bring the System to the temperature $$T$$. In other words, heat flows freely between the Reservoir and the System to maximize total entropy, and the result is that the System's temperature becomes $$T$$.
 
-The Reservoir could also enforce other constraints on the System. For example, if the System is interfaced to the Reservoir via a piston or a flexible membrane, so that a change in the Reservoir's volume is counterbalanced by an equal but opposite change in the System's volume, then the pressure in the System will be held constant by the Reservoir. Analogous to how temperature is held constant, here this is done by varying the volume of the System to bring the System to the pressure $$P$$.
+We often want to analyze situations where a thermodynamic System, under the influence of a Reservoir, is also coupled to a third object. So it's convenient to define the "Client" as a third object that interacts with the System via energy exchanges that relate to useful work being performed. For example, the System could be an engine that transmits mechanical energy to the Client to enable water to be pumped; or, the System could be a battery that transmits electrical energy to the Client to enable computation to be performed.
 
-The Environment
--------------
-We often want to analyze situations where a thermodynamic System, under the influence of a Reservoir, is furthermore coupled to a third object to exchange work energy. For example, the System could be an engine, and the third object could be a water pump. So it's useful to define the "Environment" as a third object that interacts with the System via energy exchanges that relate to useful work being performed. 
+Mediation of work and regulation of temperature
+------------
+Between any two thermodynamic objects, e.g., between the System and the Client, the performance of useful work is mediated via one or more extensive state variables changing under the influence of the conjugate intensive state variables. Some example:
+- The System is a gas that pushes on a piston; the extensive variable is the volume and the conjugate intensive variable is pressure
+- The System is a battery that pushes electrons through an external circuit by applying voltage “pressure” on the electrons; the extensive variable is electrical charge and the conjugate intensive variable is voltage
 
-In general, the system will exchange energy with the outside (the outside can be defined to consist of the “environment” plus the “reservoir”, where the environment means something outside that we want to analyze, such as a computing system that consumes energy; and the reservoir means everything else in the universe, which is so large that we think of it as being at a constant temperature).
+Similarly, the Reservoir can regulate (i.e., hold constant) an intensive variable of the System by coupling via the conjugate extensive variable. For example, if the System is interfaced to the Reservoir via a piston or a flexible membrane, so that a change in the Reservoir's volume is counterbalanced by an equal but opposite change in the System's volume (so that the total volume is constant), then the pressure in the System will be held constant by the Reservoir. Analogous to how temperature is held constant, here pressure is held constant by varying the volume of the System to bring the System to the pressure $$P$$. In general, for a pair of conjugate intensive/extensive variables, the Reservoir can be coupled to the System via the extensive variable, and this would cause the intensive variable of the System to be held constant.
 
-The change in internal energy $$dU=TdS - PdV + \mu dn + \dots$$, is expressed in terms of various intensive and extensive variables.  
+A similar mechanism is used by the Reservoir to regulate the System at a constant temperature, by a free exchange of thermal energy between the Reservoir and the System. Here, the intensive variable being regulated is the temperature $$T$$. However, there is a critical difference, as the conjugate extensive variable is *not* energy, but instead is the entropy $$S$$, and unlike the pressure-volume example where the total volume is constant, here the total entropy is monotonically increasing due to the Second Law of Thermodynamics. 
 
-For a given system and environment, the exchange in energy is mediated via some extensive variable changing under the influence of an intensive variable. For example, if the system is a gas that pushes on a piston, then the extensive variable is the volume and the intensive variable is pressure. If the system is a battery that pushes electrons through an external circuit by applying voltage “pressure” on the electrons, then the extensive variable is electrical charge and the intensive variable is voltage.  In general, for a pair of conjugate intensive/extensive thermodynamic state variables, the Reservoir can be coupled to the System via the extensive variable, and the results would be to hold the intensive variable at a constant value. Some examples include chemical potential/molar quantity and voltage/charge.
+All of this is summarized by the change in internal energy, 
+
+$$
+dU=TdS - PdV + \sum_i \mu_i n_i
+$$
+
 
 If we are interested in how the system does work on its environment (or equivalently, how its environment does work on the system), then we want to isolate the portion of dU that relates to the relevant extensive and intensive variable. If we could do that, we call that portion the change in free energy that is relevant to our situation, because the integral of that free energy would let us calculate how much total work has been done between the system and the environment. So we need a clever way to specify a “free energy” state variable that is specified in terms of $$U$$ and other state variables, such that the change in the free energy exactly corresponds to the desired work done.
 
