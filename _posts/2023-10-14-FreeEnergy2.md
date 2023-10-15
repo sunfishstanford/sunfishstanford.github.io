@@ -76,6 +76,6 @@ And finally, note that for conditions where the Gibbs free energy is used, namel
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111067078789655621){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111241244172667129){:target="_blank"}
 
 
