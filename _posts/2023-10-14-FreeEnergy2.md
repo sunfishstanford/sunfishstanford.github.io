@@ -7,11 +7,9 @@ permalink: /:year/:title:output_ext
 
 ---
 
-(In [Part I of this post](https://freeenergy.blog/2023/FreeEnergy1.html){:target="_blank"}, we explained that the word "free" in "free energy" refers to the energy being available to do useful work.) 
+In [Part I of this post](https://freeenergy.blog/2023/FreeEnergy1.html){:target="_blank"}, we explained that the word "free" in "free energy" refers to the energy being available to do useful work. Here, we will dive in further to understand the rationale behind two different types of free energy, the [Helmholtz free energy $$F$$](https://en.wikipedia.org/wiki/Helmholtz_free_energy){:target="_blank"} and the [Gibbs free energy $$G$$](https://en.wikipedia.org/wiki/Gibbs_free_energy){:target="_blank"}. 
 
-There are various flavors of free energy, and the two most well known are the [Helmholtz free energy $$F$$](https://en.wikipedia.org/wiki/Helmholtz_free_energy){:target="_blank"} and the [Gibbs free energy $$G$$](https://en.wikipedia.org/wiki/Gibbs_free_energy){:target="_blank"}. 
-
-We probably all have seen their definitions before. But why do we need these different types of free energy? And how do they relate to pressure-volume work (AKA mechanical work)?
+Why do we need different types of free energy? And why is Gibbs free energy restricted to non-pressure-volume work (AKA mechanical work)? We will dive into this, but first we'll take a step back and think about the bigger picture and why we need to define a reservoir and the environment.
 
 The Reservoir
 --------
