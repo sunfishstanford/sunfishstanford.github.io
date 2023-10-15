@@ -27,16 +27,18 @@ Between any two thermodynamic objects, e.g., between the System and the Client, 
 
 Similarly, the Reservoir can regulate (i.e., hold constant) an intensive variable of the System by coupling via the conjugate extensive variable. For example, if the System is interfaced to the Reservoir via a piston or a flexible membrane, so that a change in the Reservoir's volume is counterbalanced by an equal but opposite change in the System's volume (so that the total volume is constant), then the pressure in the System will be held constant by the Reservoir. Analogous to how temperature is held constant, here pressure is held constant by varying the volume of the System to bring the System to the pressure $$P$$. In general, for a pair of conjugate intensive/extensive variables, the Reservoir can be coupled to the System via the extensive variable, and this would cause the intensive variable of the System to be held constant.
 
-A similar mechanism is used by the Reservoir to regulate the System at a constant temperature, by a free exchange of thermal energy between the Reservoir and the System. Here, the intensive variable being regulated is the temperature $$T$$. However, there is a critical difference, as the conjugate extensive variable is *not* energy, but instead is the entropy $$S$$, and unlike the pressure-volume example where the total volume is constant, here the total entropy is monotonically increasing due to the Second Law of Thermodynamics. 
+When the Reservoir fixes the temperature of the System via a free exchange of thermal energy between the Reservoir and the System, the intensive variable being regulated is the temperature $$T$$. However, even though the coupling is via thermal energy, the conjugate extensive variable is *not* energy, but instead is the entropy $$S$$; unlike the pressure-volume example where the total volume is constant, here the total entropy is monotonically increasing due to the Second Law of Thermodynamics. 
 
-All of this is summarized by the change in internal energy, 
+All of this is summarized by the equation for the change in internal energy, 
 
 $$
 dU=TdS - PdV + \sum_i \mu_i n_i
 $$
 
+How to measured the relevant "free energy"
+------------
 
-If we are interested in how the system does work on its environment (or equivalently, how its environment does work on the system), then we want to isolate the portion of dU that relates to the relevant extensive and intensive variable. If we could do that, we call that portion the change in free energy that is relevant to our situation, because the integral of that free energy would let us calculate how much total work has been done between the system and the environment. So we need a clever way to specify a “free energy” state variable that is specified in terms of $$U$$ and other state variables, such that the change in the free energy exactly corresponds to the desired work done.
+With these big picture concepts clarified, we can now focus back on "free energy". If we are interested in a specific case where the System does work on the Client, then because that work is mediated by certain extensive and intensive variables, we will need to isolate the portion of $$dU$$ that relates to the relevant extensive and intensive variables. That portion is the change in free energy that is relevant to our case, and its integral would be the total work that has been done by the System on the Client. So we need a clever way to specify a “free energy” state variable as a function of $$U$$ and other state variables, such that the change in the free energy exactly corresponds to the work done by the relevant extensive and intensive variables.
 
 So the Helmholtz free energy, $$F = U - TS$$, gives $$dF = -PdV$$ under the conditions of constant $$T$$ due to energy exchange with the reservoir, no constraint on $$P$$ from the reservoir, work done on the environment via $$PdV$$ (which means the pressure is the same for the system and the environment), and constant $$n$$ and other extensive variables. So if we want to calculate amount of work available for the system to do on the environment involving $$P$$ and $$V$$ (“pressure-volume mechanical work”) under those conditions, then $$F$$ is the right free energy to use.
 
