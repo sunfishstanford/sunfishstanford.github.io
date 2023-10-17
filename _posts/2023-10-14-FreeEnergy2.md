@@ -7,7 +7,7 @@ permalink: /:year/:title:output_ext
 
 ---
 
-In [Part I of this post](https://freeenergy.blog/2023/FreeEnergy1.html){:target="_blank"}, we explained that the word "free" in "free energy" refers to the energy being available to do useful work. Here, we will dive in further to understand the rationale behind two different types of free energy, the [Helmholtz free energy $$F$$](https://en.wikipedia.org/wiki/Helmholtz_free_energy){:target="_blank"} and the [Gibbs free energy $$G$$](https://en.wikipedia.org/wiki/Gibbs_free_energy){:target="_blank"}. 
+In [Part I of this post](https://freeenergy.blog/2023/FreeEnergy1.html){:target="_blank"}, we explained that the word "free" in "free energy" refers to the energy being available to do useful work. Here, we will dig in further to understand the rationale behind two different types of free energy, the [Helmholtz free energy $$F$$](https://en.wikipedia.org/wiki/Helmholtz_free_energy){:target="_blank"} and the [Gibbs free energy $$G$$](https://en.wikipedia.org/wiki/Gibbs_free_energy){:target="_blank"}. 
 
 Why do we need different types of free energy? Why is Gibbs free energy restricted to non-pressure-volume work (AKA mechanical work)? We will dive into this, and along the way we'll also discuss the Reservoir and the Client, and how their interactions with the System affect the various energies and thermodynamic state variables.
 
