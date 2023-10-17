@@ -11,6 +11,10 @@ In [Part I of this post](https://freeenergy.blog/2023/FreeEnergy1.html){:target=
 
 Why do we need different types of free energy? Why is Gibbs free energy restricted to non-pressure-volume work (AKA mechanical work)? We will dive into this, and along the way we'll also discuss the Reservoir and the Client, and how their interactions with the System affect the various energies and thermodynamic state variables.
 
+TL;DR
+-----
+>Suppose that $$YdX$$ is an intensive/extensive pair used to store energy in the System. By integrating it over whatever process we go through, we would obtain the total energy that has been stored in the System by the Client, or equivalently, the total energy that is available by the "battery" System to discharge back to the Client. More precisely, this is the maximum amount of energy available to be discharged back to the Client assuming zero losses. We call this the "free energy" because it is available to be charged/discharged and is not bound to the System + Reservoir. So we need a clever way to specify a “free energy” state variable, such that the change in this "free energy state variable" is equal to $$YdX$$.
+
 The Reservoir and the Client
 --------
 The Reservoir in a thermodynamic system is like the central bank in an economy. It sets the rules of the game. 
@@ -45,7 +49,9 @@ How to measure the relevant "free energy"
 
 With these big picture concepts clarified, we can now focus back on "free energy". 
 
-Looking at Eq. $$\eqref{eq:U}$$, we see that the change in the System's internal energy is composed of the first term $$TdS$$, which interacts with the Reservoir to hold the temperature $$T$$ constant, plus additional intensive/extensive pairs with the form $$YdX$$, where $$Y$$ is an intensive variable and $$dX$$ is the change in an extensive variable (mnemonic: "X is eXtensive"). (Due to our sign conventions, the pressure-volume term has a negative sign, written as $$-PdV$$.) For any specific physical system, some of these intensive/extensive pairs of the System are used to couple with the Reservoir for regulation, and the rest of the intensive/extensive pairs are used to store energy (where the System is regarded as a battery that stores energy from the Client).
+For any specific thermodynamic System, with a variety of intensive/extensive variables that relate to mechanical energy, electrical energy, electrochemical energy, etc., we can write an expression for the change in internal energy $$U$$ (Eq. $$\eqref{eq:U}$$) that reflects those elements.
+
+The change in $$U$$ is composed of the first term $$TdS$$, which interacts with the Reservoir to hold the temperature $$T$$ constant, plus additional intensive/extensive pairs with the form $$YdX$$, where $$Y$$ is an intensive variable and $$dX$$ is the change in an extensive variable (mnemonic: "X is eXtensive"). (Due to our sign conventions, the pressure-volume term has a negative sign, written as $$-PdV$$.) Some of these intensive/extensive pairs of the System are used to couple with the Reservoir for regulation, and the rest of the intensive/extensive pairs are used to store energy (where the System is regarded as a battery that stores energy from the Client).
 
 Suppose that $$YdX$$ is an intensive/extensive pair used to store energy in the System. By integrating it over whatever process we go through, we would obtain the total energy that has been stored in the System by the Client, or equivalently, the total energy that is available by the "battery" System to discharge back to the Client. More precisely, this is the maximum amount of energy available to be discharged back to the Client assuming zero losses. We call this the "free energy" because it is available to be charged/discharged and is not bound to the System + Reservoir. So we need a clever way to specify a “free energy” state variable, such that the change in this "free energy state variable" is equal to $$YdX$$.
 
