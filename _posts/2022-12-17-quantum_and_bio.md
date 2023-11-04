@@ -23,3 +23,8 @@ As with everything in life, it's not good to have no structure at all, but it's 
 So to reiterate, a C and a N can form a peptide bond that is not cylindrically symmetric and does not permit free rotation around the bond axis, as a direct consequence of quantum mechanics.
 
 A fun example of how quantum mechanics has a simple and specific impact on the structure of proteins, and therefore on all of biology!
+
+---
+
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109531255122636809){:target="_blank"}
+
