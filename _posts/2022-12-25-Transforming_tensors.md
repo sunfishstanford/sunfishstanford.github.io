@@ -98,5 +98,4 @@ Useful Links
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109579036732509773){:target="_blank"}
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111350284521200027){:target="_blank"}
