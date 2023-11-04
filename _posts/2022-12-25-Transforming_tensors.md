@@ -93,3 +93,10 @@ Useful Links
 2. Sean Carroll's [lecture notes on General Relativity](https://preposterousuniverse.com/wp-content/uploads/grnotes-one.pdf){:target="_blank"} (he also wrote a book on this that is widely used, including by the Kubiznak course above). Eq. (1.26) on pdf page 16 explains how the vector is invariant under Lorentz transform, while its components in some coordinate system need to transform.
 
 3. Thanks to @ContraKinta for his [comments](https://math.stackexchange.com/questions/4604169/type-of-tensor-under-transformation-covariant-vector-vs-scalar){:target="_blank"} that corrected my mistake regarding inner product versus linear combination.
+
+
+
+---
+
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109579036732509773){:target="_blank"}
+
