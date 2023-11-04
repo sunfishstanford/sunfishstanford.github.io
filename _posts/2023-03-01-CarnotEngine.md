@@ -3,6 +3,7 @@ layout: post
 usemathjax: true
 categories: [math, physics, 'embracing transitory confusion']
 title: "Carnot heat engines and reversibility"
+permalink: /:year/:title:output_ext
 
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---

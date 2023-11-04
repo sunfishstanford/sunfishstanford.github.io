@@ -2,7 +2,7 @@
 layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', 'physics', math]
-title: "Free Energy, Part II"
+title: "Free Energy, "
 permalink: /:year/:title:output_ext
 
 ---
