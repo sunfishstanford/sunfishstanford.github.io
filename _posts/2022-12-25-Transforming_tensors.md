@@ -3,6 +3,8 @@ layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', math, physics]
 title: "Confusion regarding tensors and transformations"
+permalink: /:year/:title:output_ext
+
 # note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
 
