@@ -11,7 +11,7 @@ In the [prior post on free energy](http://localhost:4000/2023/FreeEnergy2.html){
 
 Let's further develop this intuition by diving into a FAQ on a few simple but subtle questions related to why free energy is a valuable tool for us. I also added a bonus question related to free energy for simulating molecules. 
 
-I was confused by these questions for a long time, so I'm excited to share this, and hope it is useful for others.
+I was confused by these questions for a long time, so I'd like to share this, and hope it is useful for others.
 
 FAQ
 --
@@ -48,7 +48,7 @@ To summarize: free energy could remain the same if the System undergoes a revers
 
 When we first learn thermodynamics and consider simple, idealized systems such as a gas in a box, we calculate its entropy $$S$$ as a function of internal energy $$U$$, so that if it's in equilibrium with a Reservoir at temperature $$T$$, energy will distribute between the System and the Reservoir so that total entropy is maximized, and this gives us an expected value for $$U$$. If the System consists of a single gas molecule, then the instantaneous value of $$U$$ will randomly fluctuate around the average value; typically however, we are considering a System with a very large number of molecules, and therefore the relative size of random fluctuations will be very small compared to the average value, so that we can in practice ignore the fluctuations. And for such a System with a large number of molecules, the chemical potential gives the change in free energy when the number of molecules is changed. 
 
-When we want to model the behavior of molecules (for example, for computational drug discovery), however, we are flipping this example on its head. Instead of a single System that contains many molecules, we consider an ensemble of molecules, and think of each molecule as a mini-"system" whose distribution in phase space is given by the Boltzmann distribution. For this setting, we may be less interested in the chemical potential from adding more molecules, and instead may be interested in the 3D conformation of molecules or the binding affinity between molecules. Therefore, we typically want to estimate the free energy as a function of the relevant parameters of the problem, such as the coordinates of the nuclei, the characteristics of the solvent (for example, water), etc.
+When we want to model the behavior of molecules (for example, for computational drug discovery), however, we are flipping this on its head. Instead of a single System that contains many molecules, we consider an ensemble of molecules, and think of each molecule as a mini-"system" whose distribution in phase space is given by the Boltzmann distribution. For this setting, we may be less interested in the chemical potential from adding more molecules, and instead may be interested in the 3D conformation of molecules or the binding affinity between molecules. Therefore, we typically want to estimate the free energy as a function of the relevant parameters of the problem, such as the coordinates of the nuclei, the characteristics of the solvent (for example, water), etc.
 
 
 ---
