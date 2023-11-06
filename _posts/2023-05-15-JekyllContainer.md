@@ -12,7 +12,7 @@ permalink: /:year/:title:output_ext
 
 Due to my primitive skills, I had been using Github Pages as my markdown verifier, and would make some changes to a new post, push to the repo in Github, catch any errors (usually in mathjax related stuff, which would exhibit subtle differences if rendered on another editor compared to how Github Pages/Jekyll would render it), then rinse and repeat. Very cumbersome because Github rations out processing cycles, so each iteration takes several minutes instead of being instantaneous. So the natural solution seemed to be a local install of a Jekyll server on my Macbook Air, to quickly verify how a new post looks.
 
-However, I quickly found out how difficult it is to install a Jekyll environment on a Macbook with Apple silicon (M2 in my case). Bascially it did not seem doable.
+However, I quickly found out how difficult it is to install a Jekyll environment on a Macbook with Apple silicon (M2 in my case). Basically it did not seem doable.
 
 Also, related to that, I've had a lot of trouble installing and trying open source software due to trouble with installation, dependencies, etc. on the Mac. 
 
