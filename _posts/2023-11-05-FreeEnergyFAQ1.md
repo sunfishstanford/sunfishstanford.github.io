@@ -2,7 +2,7 @@
 layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', 'physics', math]
-title: "Free Energy: FAQ on why it's useful"
+title: "Free energy: why it's useful"
 permalink: /:year/:title:output_ext
 
 ---
