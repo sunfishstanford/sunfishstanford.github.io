@@ -53,6 +53,4 @@ When we want to model the behavior of molecules (for example, for computational 
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111241244172667129){:target="_blank"}
-
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111361149185984597){:target="_blank"}
