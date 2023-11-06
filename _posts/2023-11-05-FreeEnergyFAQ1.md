@@ -2,14 +2,16 @@
 layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', 'physics', math]
-title: "Free Energy FAQ"
+title: "Free Energy: FAQ on why it's useful"
 permalink: /:year/:title:output_ext
 
 ---
 
 In the [prior post on free energy](http://localhost:4000/2023/FreeEnergy2.html){:target="_blank"}, we discussed the role of the Reservoir as the "central banker" of the "energy economy" for a thermodynamic system. In other words, the Reservoir plays a *regulatory* role in the system. I've found this *control theory* perspective on a thermodynamic system to be really helpful for my intuition.
 
-Let's further develop this intuition by diving into a FAQ on a few simple but subtle questions. I was confused by these for a long time, so I'm excited to share this, and hope it is useful for others.
+Let's further develop this intuition by diving into a FAQ on a few simple but subtle questions related to why free energy is a valuable tool for us. I also added a bonus question related to free energy for simulating molecules. 
+
+I was confused by these questions for a long time, so I'm excited to share this, and hope it is useful for others.
 
 FAQ
 --
