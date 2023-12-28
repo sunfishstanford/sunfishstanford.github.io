@@ -50,4 +50,5 @@ This is the meaning of the martingale condition.
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111361149185984597){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111657178074202999){:target="_blank"}
+
