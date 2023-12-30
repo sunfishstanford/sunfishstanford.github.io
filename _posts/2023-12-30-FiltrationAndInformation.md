@@ -27,7 +27,6 @@ And so a more precise statement is: "$$\mathcal{F}_t$$, together with the inform
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110482651760587530){:target="_blank"}
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111672004708735800){:target="_blank"}
 
 
