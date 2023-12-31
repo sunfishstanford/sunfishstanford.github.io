@@ -49,6 +49,5 @@ If we plug in $$t=T$$ into $$f(x,t)$$, we get $$f(x,T) = V(x)$$, and therefore $
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111672004708735800){:target="_blank"}
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111677727136310287){:target="_blank"}
 
