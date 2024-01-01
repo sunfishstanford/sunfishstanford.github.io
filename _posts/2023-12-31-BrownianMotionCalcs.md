@@ -11,7 +11,7 @@ permalink: /:year/:title:output_ext
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimiters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
-The lecture notes from Jonathan Goodman (NYU Courant Institute) on stochastic calculus nicely complement the various stochastic calculus textbooks because the NYU lecture notes focus on applications instead of proofs. In [Lesson 1 on Brownian motion](https://math.nyu.edu/~goodman/teaching/StochCalc2018/notes/Lesson1.pdf){:target="_blank"}, there is a very interesting discussion of the intuition for forward and backward Kolmogorov equations. 
+The lecture notes from Jonathan Goodman (NYU Courant Institute) on stochastic calculus nicely complement the various stochastic calculus textbooks because the NYU lecture notes focus on applications instead of proofs. In [Lesson 1 on Brownian motion](https://math.nyu.edu/~goodman/teaching/StochCalc2018/notes/Lesson1.pdf){:target="_blank"}, there is a very interesting discussion of the intuition for forward and backward Kolmogorov equations (going forward and backward in time, which is kind of like time travel...). 
 
 Gaussian kernel: transition probability for Brownian motion
 -------
@@ -26,7 +26,7 @@ This is a Gaussian kernel (Green's function or impulse response) that gives the 
 We then have Eq. (10), the PDF when given an arbitrary starting position:
 
 $$
-\displaystyle u(x,t)=\int_{-\infty}^{\infty} u_0(y)G(x,y,t)dy
+u(x,t)=\int_{-\infty}^{\infty} u_0(y)G(x,y,t)dy
 $$
 
 This is derived by convolving the Gaussian kernel with the starting distribution. If we set $$t=0$$, then the convolution with the Gaussian kernel is an identity operation because it is equivalent to evolving time over zero time. So we get back the initial condition $$u_0(x)$$; this is why we say it satisfies the Kolmogorov forward equation (see bottom of p. 5 of the lecture notes), as it starts with an initial distribution and calculates the impact of forward time evolution.
