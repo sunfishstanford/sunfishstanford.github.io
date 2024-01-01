@@ -62,7 +62,7 @@ $$
 
 But we know for the Carnot engine of Case 1 that $$\lvert Q/Q_{R1} \rvert = T/T_{R1}$$. Therefore, we have $$\lvert Q_{R2B}/Q_{R2A}\rvert = 1$$. Thus, given a Carnot engine of Case 1, we can always construct two Carnot engines $$A$$ and $$B$$ so that they are each sized to match the Carnot engine of Case 1 at the temperatures $$T$$ and $$T_{R1}$$, and so that they furthermore share a common value (up to a potential negative sign) of heat flow $$Q_{R2}$$ at $$T_{R2}$$. 
 
-Therefore, if Alice measures the unknown temperature using a reference reservoir at $$T_{R1}$$ defined to be at 1 degree, the result in Alice's temperature scale would be $$T_{Alice} = \lvert Q/Q_{R1} \rvert$$. Similarly, Bob, using reference $$T_{R2}$$ defined to be at 1 degree, would measure in Bob's temperature scale $$T_{Bob} = \lvert Q/Q_{R2} \rvert$$. And you could always convert between the two temperature scales using the scaling factor $$\lvert Q_{R1}/Q_{R2} \rvert$$. Therefore, we have the consistency that were looking for.
+Therefore, if Alice measures the unknown temperature using a reference reservoir at $$T_{R1}$$ defined to be at 1 degree, the result in Alice's temperature scale would be $$T_{Alice} = \lvert Q/Q_{R1} \rvert$$. Similarly, Bob, using reference $$T_{R2}$$ defined to be at 1 degree, would measure in Bob's temperature scale $$T_{Bob} = \lvert Q/Q_{R2} \rvert$$. And you could always convert between the two temperature scales using the scaling factor $$\lvert Q_{R1}/Q_{R2} \rvert$$. Therefore, we have the consistency that we were looking for.
 
 Finally, we won't discuss it here, but the thermodynamic temperature scale can be shown to be the same as the temperature measured by an ideal-gas thermometer. 
 
