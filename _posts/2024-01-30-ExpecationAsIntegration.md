@@ -59,6 +59,7 @@ Partition the range of $$X$$ into intervals; for each interval we multiply (1) t
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111677727136310287){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111848900096912297){:target="_blank"}
+
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimiters, and using $$ for the latex delimiters for both math mode and display math mode.)
