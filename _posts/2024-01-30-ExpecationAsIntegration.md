@@ -54,7 +54,7 @@ $$
 E[X] = \int\limits_{-\infty}^{\infty} x P(x) dx.
 $$
 
-Partition the range of $$X$$ into intervals (each interval corresponds to "$$dx$$"); for each interval we multiply (1) the size of the interval with (2) the measure of the event mapped by the random variable $$X$$ into that interval (this corresponds to $$P(x)$$) and (3) the expression to be integrated (here it is $$X$$ because we are integrating $$X$$); sum over all intervals; and take the limit as the partition is made more finely.
+Partition the range of $$X$$ into intervals; for each interval we multiply (1) the measure of the event mapped by the random variable $$X$$ into that interval (this corresponds to $$P(x)dx$$) with (2) the expression to be integrated (here it is $$X$$ because we are integrating $$X$$); sum over all intervals; and take the limit as the partition is made more finely.
 
 
 ---
