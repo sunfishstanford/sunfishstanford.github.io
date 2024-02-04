@@ -34,14 +34,14 @@ And why it actually makes sense
 
 Here's where I went wrong: the joint distribution fully determines the marginal distribution. So we are not allowed to arbitrarily specify both the joint distribution $$P(x,z)$$ and the marginal distribution $$P(z)$$. And there are two approaches to thinking about this.
 
-In the first approach, if we assume that there is a "global truth", a joint distribution $$P(x,z)$$ that is valid for any choice of $$z$$, then $$P(z)$$ is the probability that a randomly sampled image has the classification of $$z$$, and *has nothing to do with whether or not we decided to generate a rose image*. So it is INCORRECT to set $$P(z)$$ to be a delta function at $$z_0$$. The correct method is to take $$P(x,z)$$, divide it by $$P(z)$$ (which is calculated by marginalizing $$P(x,z)$$ over $$x$$), and evaluate the quotient at $$z=z_0$$.
+In the first approach, if we assume that there is a "global truth", a joint distribution $$P(x,z)$$ that is valid for any choice of $$z$$, then $$P(z)$$ is the probability that a randomly sampled image has the classification of $$z$$, and *$$P(z)$$ has nothing to do with whether or not we decided to generate a rose image*. So it is INCORRECT to set $$P(z)$$ to be a delta function at $$z_0$$. The correct method is to take $$P(x,z)$$, divide it by $$P(z)$$ (which is calculated by marginalizing $$P(x,z)$$ over $$x$$), and evaluate the quotient at $$z=z_0$$.
 
 In the second approach, we assume that the state of the world has evolved so that $$z=z_0$$ in the current state of the world. Then, $$P(z)$$ would indeed be a delta function at $$z_0$$. And $$P(x,z)$$ would have evolved so that when you marginalize it over $$x$$ (i.e., $$\int P(x,z) dx = P(z)$$), we get a $$P(z)$$ that says that the event $$z=z_0$$ occurs with certainty.
 
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111864185348155125){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111875263589151359){:target="_blank"}
 
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimiters, and using $$ for the latex delimiters for both math mode and display math mode.)
