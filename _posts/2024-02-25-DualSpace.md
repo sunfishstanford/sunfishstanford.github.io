@@ -84,7 +84,7 @@ If we construct a new vector space spanned by $$w_i$$, we see that this new vect
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111875263589151359){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111993699873026393){:target="_blank"}
 
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimiters, and using $$ for the latex delimiters for both math mode and display math mode.)
