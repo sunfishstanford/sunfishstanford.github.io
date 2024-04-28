@@ -31,8 +31,5 @@ To make this concrete, assume that the preschool has 6 kids, numbered from 1 to 
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/111993699873026393){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/112346824867819158){:target="_blank"}
 
-
-
-[//]: #  https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
