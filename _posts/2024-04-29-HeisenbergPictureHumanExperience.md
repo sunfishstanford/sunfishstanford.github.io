@@ -19,6 +19,5 @@ It's also fascinating to explore what the difference is between our memory of a 
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/110922865624784264){:target="_blank"}
-
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/112355171780517244){:target="_blank"}
 
