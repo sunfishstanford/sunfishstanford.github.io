@@ -2,13 +2,12 @@
 layout: post
 usemathjax: true
 categories: ['embracing transitory confusion', math, physics]
-title: "Direct sum versus tensor product of vector spaces"
+title: "Direct sum versus Cartesian product versus tensor product of vector spaces"
 permalink: /:year/:title:output_ext
 
-# note: shift-cmd-v to view the markdown view; cmd-k v to view side-by-side, then can do 'toggle preview locking' command in the 3 dots in the preview tab
 ---
 
-I regularly get confused about direct sums versus tensor products if it's been a while since I last thought about the topic, and then I would need to re-remember how things work. So I decided to jot down these notes to save some time in the future. (Note: we are only considering direct sums and tensor products of finite numbers of spaces.)
+I regularly get confused about direct sums vs. Cartesian products vs. tensor products of vector spaces if it's been a while since I last thought about the topic, and then I would need to re-remember how things work. So I decided to jot down these notes to save some time in the future. (Note: we are only considering "sums" and "products" of finite numbers of spaces.)
 
 Cut to the chase
 ------
@@ -31,7 +30,7 @@ What if we recursively form a second level of direct sums? For example, let $$C$
 
 So, we see that for direct sums of a bunch of vector spaces, we just take the basis vectors of each vector space, throw them all together into a bucket, and then the direct sum space is  comprised of linear combinations of all the basis vectors in this bucket.
 
-The direct sum of a bunch of vector spaces is also the same thing as the Cartesian product of the vector spaces. To see this, recall that a Cartesian product of two sets is constructed via an ordered pair where the first member of the ordered pair is chosen from the first set and the second member is chosen from the second set, and we iterate over all possible choices. Therefore, a nested series of Cartesian products is a nested series of ordered pairs. But such a nested series of various items is, for the current purpose, equivalent to a simple flat list of all of the items. And each item in the list is a possible choice from one of the vector space. And each choice from a vector space is actually a list of choices of possible multiples of the basis vectors for that space. So the end result is formally a linear combination of all of the basis vector from all of the vector spaces, which is the same thing as a direct sum.
+The direct sum of a bunch of vector spaces is also the same thing as the Cartesian product of the vector spaces. To see this, recall that a Cartesian product of two sets is constructed via an ordered pair where the first member of the ordered pair is chosen from the first set and the second member is chosen from the second set, and we iterate over all possible choices. Therefore, a nested series of Cartesian products is a nested series of ordered pairs. But such a nested series of various items is, for the current purpose, equivalent to a simple flat list of all of the items. And each item in the list is a possible choice from one of the vector space. And each choice from a vector space is actually a list of choices of possible multipliers of the basis vectors for that space. So the end result is formally a linear combination of all of the basis vector from all of the vector spaces, which is the same thing as a direct sum.
 
 Tensor product
 --------
