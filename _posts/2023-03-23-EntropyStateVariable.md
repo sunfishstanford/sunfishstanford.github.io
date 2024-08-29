@@ -15,7 +15,7 @@ In thermodynamics, we have state variables (e.g., temperature, pressure, volume)
 
 Thermodynamics also tells us that entropy is a state variable. However, we don't have a sensor that measures entropy directly. So how do we make sense of why entropy is a state variable?
 
-The answer is that a quantity is a state variable if and only if it has a well defined gradient, such that the path integral of the gradient over a closed path is zero, for any arbitrary closed path (see this [prior post](https://freeenergy.blog/2023/imperfectDifferential.html){:target="_blank"}). Such a gradient is called a *perfect differential*.
+The answer is that a quantity is a state variable if and only if it has a well defined gradient, such that the path integral of the gradient over a closed path is zero, for any arbitrary closed path (see this [prior post](https://freeenergy.blog/2024/imperfectDifferential.html){:target="_blank"}). Such a gradient is called a *perfect differential*.
 
 Therefore, we just need to show that entropy has a perfect differential. And to do that, we use the profound properties of a Carnot heat engine.
 
