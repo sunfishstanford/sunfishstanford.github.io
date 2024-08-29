@@ -40,4 +40,4 @@ And finally, the situation in E&M is exactly analogous if we replace energy with
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/109922026796201683){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/113043330002883462){:target="_blank"}
