@@ -40,4 +40,5 @@ Therefore, any set of $$n$$ independent vectors chosen from $$V$$ is also a basi
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/113043330002883462){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/113185140353237231){:target="_blank"}
+
