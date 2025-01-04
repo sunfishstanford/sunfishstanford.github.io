@@ -36,13 +36,11 @@ permalink: /:year/:title:output_ext
 
 $$\newcommand\dag\dagger$$
 
-Group representation theory is broadly used across the physical sciences, e.g., the classification of elementary particles in quantum field theory, the prediction of spectroscopic lines in chemistry, and the analysis of semiconductor band gap structures in solid state physics.
+In the [lecture notes by G.D. James on the representation theory for symmetric groups](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www-users.cse.umn.edu/~webb/oldteaching/Year2010-11/the-representation-theory-of-the-symmetric-groups-SLN.pdf&ved=2ahUKEwjW69DIuduKAxWmHkQIHZTFAiUQFnoECBkQAQ&usg=AOvVaw2TD7GrvL8QvfLtmjFT3Ck_){:target="_blank"},
+the proof for Lemma 4.6 has this line: "Also, if $$\lambda=\mu$$, then $$\{t^*\}$$ is one of the tabloids involved in $$\{t\}\kappa_t$$, by construction."
 
-A central theorem in group representation theory is the orthogonality of matrix elements of irreducible representations (irreps)[^1]: 
+In the prior line, James proved that for any row in the tableau $$t^*$$, all the numbers belong to different columns in the tableau $$t$$. Therefore, one of the tableaus, call it $$t_1$$, in $$\{t^*\}$$ will have every number in the same column as in $$t$$. This is possible because no two numbers in a given row of $$t_1$$ are from the same column in $$t$$
 
-$$
-\sum_{g\in G\;\;\;} D^{\mu}(g)^{\dag}_{ki} D^{\nu}(g)_{jl} = C \delta_{\mu \nu} \delta_{ij} \delta_{kl},
-$$
 
 where $$G$$ is a group, $$\mu$$ and $$\nu$$ are labels for irreps, the $$\dag$$ symbol denotes taking the adjoint, $$D^{\mu}(g)$$ and $$D^{\nu}(g)$$ are matrices for irreps, and $$C$$ is a positive, nonzero constant that depends on the order of $$G$$ and the dimension of the irrep.
 
