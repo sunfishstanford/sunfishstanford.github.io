@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-categories: ['embracing transitory confusion', math]
+categories: ['embracing transitory confusion', math, 'probability theory']
 title: "The Performance Difference Lemma in Reinforcement Learning"
 permalink: /:year/:title:output_ext
 
@@ -54,13 +54,13 @@ $$
 where the expectation is over trajectories sampled from the policy $$\pi_1$$, and each trajectory is
 
 $$
-\tau = (s_0, a_0, s_1, a_1, \dots, s_T) .
+\tau = (s_0, a_0, s_1, a_1, \dots) .
 $$
 
 Also $$\gamma$$ is a discount factor, and $$A^{\pi_2}(s_t, a_t) \equiv Q^{\pi_2}(s_t, a_t) - V^{\pi_2}(s_t)$$ is the advantage
 function for policy $$\pi_2$$.
 
-We begin using the definition for policy value
+We begin, using the definition for policy value
 
 $$
 \begin{align}
@@ -70,7 +70,7 @@ J(\pi_1) - J(\pi_2)
 $$
 
 Here, specifying the expectation to also be over $$\pi_1$$ and $$a_0$$ is a no-op, as the value functions do not depend on 
-the action $$a_0$$ (and hence do not depend on the policy $$\pi_1$$).
+the action $$a_0$$ (and hence do not depend on whether the expectation samples $$a_0$$ from the policy $$\pi_1$$).
 
 We continue:
 
@@ -108,7 +108,7 @@ Continuing:
 
 $$
 \begin{align}
-&= \mathbb{E}^{\pi_1}_{s_0, a_0} \left[ A^{\pi_2}(s_0, a_0) \right] + \mathbb{E}^{\pi_1}_{\substack{s_{0:1} \\ a_{0:1}}} \left[ \gamma V^{\pi_1}(s_1) - \gamma V^{\pi_2}(s_1) \right] && \leftarrow \text{now expand the right side the same way } \\
+&= \mathbb{E}^{\pi_1}_{s_0, a_0} \left[ A^{\pi_2}(s_0, a_0) \right] + \mathbb{E}^{\pi_1}_{\substack{s_{0:1} \\ a_{0:1}}} \left[ \gamma V^{\pi_1}(s_1) - \gamma V^{\pi_2}(s_1) \right] && \leftarrow \text{next, expand the right side the same way } \\
 
 \\
 &= \mathbb{E}^{\pi_1}_{s_0, a_0} \left[ A^{\pi_2}(s_0, a_0) \right] + \mathbb{E}^{\pi_1}_{\substack{s_{0:1} \\ a_{0:1}}} \left[ \gamma A^{\pi_2}(s_1, a_1) \right] + \cdots \\
@@ -129,7 +129,7 @@ $$
 
 ---
 
-[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/113631240589287684){:target="_blank"}
+[Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/115839688418406455){:target="_blank"}
 
 
 [//]: #  https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
