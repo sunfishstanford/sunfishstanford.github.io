@@ -28,7 +28,7 @@ Here are my key lessons learned (which is a euphemism for the things to got me s
 
 - Not all linuxes work for this. Turns out that Alpine, although very nice and small, probably doesn't work. But Debian does!
 - The `jekyll serve` command defaults to listening at localhost, `127.0.0.1`, which has always worked for me in the past for serving ReactJS pages, etc. But since we now have a container running on my host (host = my macbook), we need to use `jekyll serve --host 0.0.0.0` to enable it to listen to the host. This had me stuck for a LONG time...
-- The various FAQs and tutorials for setting up a Jekyll server give `jekyll new <directory>` as the command to run, to set up the basic files and directories. But that only works if that directory is empty, and I want to mount my host directory holding my working posts, so that the Jekyll server can auto-regenerate. So this means I had to first let Jekyll generate a new directory that's empty and populate it, and then I had to mount/bind my real directory to that point. Turns out this could be nicely separated into roles for `Dockerfile` vs. `docker-compose.yml`.
+- The various FAQs and tutorials for setting up a Jekyll server give `jekyll new <directory>` as the command to run, to set up the basic files and directories. But that only works if that directory is empty; and in my case, I wanted to mount my host directory holding my working posts so that the Jekyll server can auto-regenerate. So this meant that I had to first let Jekyll generate a new directory that's empty and populate it, and then I had to mount/bind my real directory to that point. Turns out this could be nicely separated into roles for `Dockerfile` vs. `docker-compose.yml`.
 
 Step-by-step Instructions
 -----------

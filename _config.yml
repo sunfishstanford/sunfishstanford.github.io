@@ -18,6 +18,7 @@ minima:
     mastodon:
       - username: sunfishstanford
         instance: hachyderm.io
+    bluesky: sunfishstanford.bsky.social
     linkedin: francis-ho-b47338
     github:  sunfishstanford
     twitter: fho888

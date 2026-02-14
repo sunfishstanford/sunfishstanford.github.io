@@ -15,7 +15,7 @@ In thermodynamics, we have state variables (e.g., temperature, pressure, volume)
 
 Thermodynamics also tells us that entropy is a state variable. However, we don't have a sensor that measures entropy directly. So how do we make sense of why entropy is a state variable?
 
-The answer is that a quantity is a state variable if and only if it has a well defined gradient, such that the path integral of the gradient over a closed path is zero, for any arbitrary closed path (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/02/24/imperfectDifferential.html){:target="_blank"}). Such a gradient is called a *perfect differential*.
+The answer is that a quantity is a state variable if and only if it has a well defined gradient, such that the path integral of the gradient over a closed path is zero, for any arbitrary closed path (see this [prior post](https://freeenergy.blog/2024/imperfectDifferential.html){:target="_blank"}). Such a gradient is called a *perfect differential*.
 
 Therefore, we just need to show that entropy has a perfect differential. And to do that, we use the profound properties of a Carnot heat engine.
 
@@ -39,7 +39,7 @@ $$
 
 where $$Q_L$$ is the total heat flow during the low temperature part (the negative sign means that heat flows in the direction from the Carnot engine to the low temperature reservoir).
 
-Therefore, because the thermodynamic temperature scale is defined such that the ratio of the temperatures is equal to the absolute value of the ratio of the heat flows (see this [prior post](https://sunfishstanford.github.io/math/physics/embracing%20transitory%20confusion/2023/03/18/ThermodynamicTemperature.html){:target="_blank"}), the path integral over the entire closed cycle is zero.
+Therefore, because the thermodynamic temperature scale is defined such that the ratio of the temperatures is equal to the absolute value of the ratio of the heat flows (see this [prior post](https://freeenergy.blog/2023/ThermodynamicTemperature.html){:target="_blank"}), the path integral over the entire closed cycle is zero.
 
 Since this holds true for any arbitrary Carnot engine cycle, and since any closed path in the state space can be expressed as a sum of Carnot cycles, we have shown that $$\delta Q/T$$ is a perfect differential. We call this perfect differential
 
