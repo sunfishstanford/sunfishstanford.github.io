@@ -95,7 +95,7 @@ And just remember that the exponent on the right side (the answer) must be posit
 
 [Share or comment on Mastodon](https://hachyderm.io/@Sunfishstanford/116441138212572131){:target="_blank"}
 
-[Share or comment on Bluesky](https://bsky.app/profile/sunfishstanford.bsky.social/post/3mjyc6fwm6223){:target="_blank"}
+[Share or comment on Bluesky](https://bsky.app/profile/sunfishstanford.bsky.social/post/3mjyd5sc5yc27){:target="_blank"}
 
 [//]: # (Bing prompt: Convert the following text to latex format,  only putting the math equation parts between the latex delimiters, and using $$ for the latex delimiters for both math mode and display math mode.)
 
